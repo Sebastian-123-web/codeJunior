@@ -1,6 +1,6 @@
 import { BrowserRouter, Route, Routes } from "react-router-dom";
 import Developers from "../components/CompanyPage/Developers/Developers";
-import MenuEnterprise from '../components/MenuEnterprise/MenuEnterprise'
+import MenuEnterprise from "../components/CompanyPage/MenuEnterprise/MenuEnterprise";
 import Perfil from "../pages/Perfil/Perfil";
 import Notifications from '../components/CompanyPage/Notifications/Notifications'
 import Logout from '../components/CompanyPage/Logout/Logout'

@@ -2,10 +2,10 @@ import { NavLink } from 'react-router-dom'
 import { useState } from 'react'
 import '../MenuEnterprise/MenuEnterprise.css'
 
-import developer from '../../assets/MenuEnterpriseIcons/developer.png'
-import logout from '../../assets/MenuEnterpriseIcons/logout.png'
-import notification from '../../assets/MenuEnterpriseIcons/notification.png'
-import user from '../../assets/MenuEnterpriseIcons/user.png'
+import developer from '../../../assets/MenuEnterpriseIcons/developer.png'
+import logout from '../../../assets/MenuEnterpriseIcons/logout.png'
+import notification from '../../../assets/MenuEnterpriseIcons/notification.png'
+import user from '../../../assets/MenuEnterpriseIcons/user.png'
 
 const MenuEnterprise = () => {
     const [ menu, setMenu ] = useState(false)

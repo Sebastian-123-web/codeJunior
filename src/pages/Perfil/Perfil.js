@@ -1,8 +1,8 @@
 import React from 'react'
 import './Perfil.css'
-import PerfilBannerCompany from '../../components/Perfil/PerfilBannerCompany/PerfilBannerCompany'
-import PerfilMainCompany from '../../components/Perfil/PerfilMainCompany/PerfilMainCompany'
-import PerfilSocialCompany from '../../components/Perfil/PerfilSocialCompany/PerfilSocialCompany'
+import PerfilBannerCompany from '../../components/CompanyPage/Perfil/PerfilBannerCompany/PerfilBannerCompany'
+import PerfilMainCompany from '../../components/CompanyPage/Perfil/PerfilMainCompany/PerfilMainCompany'
+import PerfilSocialCompany from '../../components/CompanyPage/Perfil/PerfilSocialCompany/PerfilSocialCompany'
 
 export default function Perfil() {
   return (

@@ -1,6 +1,6 @@
 import React from 'react'
 import './PerfilBannerCompany.css'
-import bannerCompanyDefault from '../../../assets/Perfil/banner-company-default.jpg'
+import bannerCompanyDefault from '../../../../assets/Perfil/banner-company-default.jpg'
 
 export default function PerfilBannerCompany() {
   return (
