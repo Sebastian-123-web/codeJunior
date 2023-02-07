@@ -1,22 +1,19 @@
-import { Alert, Avatar, Grid } from "@mui/material"
-import { Container } from "@mui/system"
-import './Perfildev.css'
-import { DataUser } from "../services/dataUser"
+import './Perfil.css'
 import { useEffect, useState } from "react"
 
-const Perfildev = () => {
+const Perfildeveloper = () => {
 
     const [ user, setUser ] = useState({})
 
-    const fetchDataUser = async() => {
-        const user = await DataUser();
-        setUser(user);
-        console.log(user);
-    }
+    // const fetchDataUser = async() => {
+    //     const user = await DataUser();
+    //     setUser(user);
+    //     console.log(user);
+    // }
 
-    useEffect( () => {
-        fetchDataUser();
-    }, [] )
+    // useEffect( () => {
+    //     fetchDataUser();
+    // }, [] )
 
     return (
         <div className="container">
@@ -129,4 +126,4 @@ const Perfildev = () => {
     )
 }
 
-export default Perfildev;
+export default Perfildeveloper;
