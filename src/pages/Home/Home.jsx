@@ -1,4 +1,3 @@
-import './App.css';
 import {HeaderHome} from '../../components/Home/HeaderHome/HeaderHome'
 import { MainHome } from '../../components/Home/MainHome/MainHome';
 import { FooterHome } from '../../components/Home/FooterHome/FooterHome';

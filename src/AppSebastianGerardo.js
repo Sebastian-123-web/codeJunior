@@ -3,7 +3,7 @@ import { Router } from './router';
 
 function App2() {
   return (
-    <div className="App">
+    <div className="company-user">
       <Router/>
     </div>
   );
