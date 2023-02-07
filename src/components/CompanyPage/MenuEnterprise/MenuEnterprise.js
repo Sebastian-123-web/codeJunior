@@ -1,4 +1,4 @@
-import { NavLink } from 'react-router-dom'
+import { NavLink, Outlet } from 'react-router-dom'
 import { useState } from 'react'
 import '../MenuEnterprise/MenuEnterprise.css'
 
@@ -37,6 +37,9 @@ const MenuEnterprise = () => {
                         </ul>
                 </nav>
                 </section>
+            </section>
+            <section className='outlet'>
+                <Outlet/>
             </section>
         </section>
     )    
