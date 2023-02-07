@@ -1,0 +1,149 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,200;0,300;0,400;0,500;1,600&display=swap');
+
+/* 
+    MENU
+*/
+
+
+
+.menu {
+    font-family: 'Poppins', sans-serif;
+    width: 4rem;
+    /* min-width: 4rem; */
+    /* max-width: 4rem; */
+    min-height: 100vh;
+    max-height: 100vh;
+    position: relative;
+    display: flex;
+    /* justify-content: center; */
+    /* align-items: center; */
+    transition: all .3s;
+    flex-direction: column;
+    /* background-color: red; */
+}
+
+.menu-fixed {
+  width: 4rem;
+  position: fixed;
+  transition: all .3s;
+}
+
+.menu__dc-fixed {
+  width: 16rem;
+
+}
+
+.nav {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100vh;
+  position: absolute;
+  transition: all .6s;
+  overflow: hidden;
+}
+
+.menu__dc {
+    width: 16rem;
+    position: relative;
+}
+
+.list {
+    width: 100%;
+    height: 100vh;
+    background-color: #F97300;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    list-style: none;
+    padding: 0;
+}
+
+.list li {
+    width: 100%;
+    font-weight: 500;
+    line-height: 1.1;
+    letter-spacing: 0.3px;
+    margin: 40px;
+    display: flex;
+    align-items: center;
+}
+
+.list li .icon-enterprise {
+    margin-left: 1rem;
+    cursor: pointer;
+    width: 30px;
+    height: 30px;
+}
+
+.list li .link-name {
+    text-decoration: none;
+    margin-left: 1.5rem;
+}
+
+.list li .links {
+    padding: 5px 0 5px 0;
+    display: flex;
+    align-items: center;
+    /* border-left: 3px solid transparent; */
+    transition: all .3s;
+}
+
+/* 
+    HAMBURGUESA
+*/
+
+.bars__menu {
+    margin-top: 2rem;
+    width: 30px;
+    height: 30px;
+    cursor: pointer;
+    /* display: none; */
+    z-index: 2;
+    position: absolute;
+    transform: translate(-50%, -50%);
+    left: 50%;
+    top: 5%;
+  }
+  
+
+  .activeBars__menu {
+    left: 90%;
+    top: 5%;
+  }
+  
+  .bars__menu span {
+    display: block;
+    width: 100%;
+    height: 2px;
+    background: #000;
+    margin-top: 6px;
+    transition: all 300ms;
+    transform-origin: 0px 100%;
+  }
+  
+  .activeLine1__bars-menu {
+    transform: rotate(45deg) translate(-2px, 1px);
+  }
+  
+  .activeLine2__bars-menu {
+    opacity: 0;
+    margin-left: -30px;
+  }
+  
+  .activeLine3__bars-menu {
+    transform: rotate(-45deg) translate(-4px, 2px);
+  }
+
+
+  /* @media screen and (max-width: 760px) {
+    .menu {
+        width: 100vw;
+    }
+    
+    .bars__menu {
+        top: 5%;
+      }
+  } */

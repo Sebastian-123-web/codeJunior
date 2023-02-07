@@ -1,0 +1,9 @@
+
+.main-company {
+    min-width: 52rem;
+    min-height: 10rem;
+    height: 10rem;
+    border-radius: 12px;
+    margin-left: 1rem;
+    background: #F8F5E4;
+}
