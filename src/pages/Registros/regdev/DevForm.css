@@ -1,0 +1,49 @@
+body{
+  background-color: #f8f5e4;
+
+
+}
+main {
+display: flex;
+align-items: center;
+justify-content: center;
+height: 100vh;
+}
+.tarjeta{
+background-color: white;
+height: 600px;
+width: 900px;
+border-radius: 30px;
+
+
+}
+
+
+.devform{
+
+  width: 100%;
+  height: 80%;
+  display: grid;
+  /* grid-template-columns: 50% 50%;
+  grid-template-rows: 30% 30% 30% auto; */
+  display: flex;
+  flex-wrap: wrap;
+}
+h2{
+  color:#10828c;
+}
+.a{
+  border: #10828c solid 4px;
+
+}
+label{
+
+  color: #10828c;
+}
+input{
+  margin-top: 20px;
+height: 30px;
+border-radius: 5px;
+width: 400px;
+
+}
