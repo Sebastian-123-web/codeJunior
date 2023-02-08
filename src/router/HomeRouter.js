@@ -1,5 +1,5 @@
 import { BrowserRouter, Route, Routes } from "react-router-dom";
-import Developers from "../components/CompanyPage/Developers/Developers";
+import Developers from "../components/CompanyPage/DevelopersSection/Developers/Developers";
 import MenuEnterprise from "../components/CompanyPage/MenuEnterprise/MenuEnterprise";
 import Perfil from "../pages/Perfil/Perfil";
 import Notifications from '../components/CompanyPage/Notifications/Notifications'

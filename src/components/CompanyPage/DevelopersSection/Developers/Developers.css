@@ -1,0 +1,103 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,200;0,300;0,400;0,500;1,600&display=swap');
+.company-dev-users {
+    font-family: 'Poppins', sans-serif;
+    display: flex;
+}
+
+.company-dev-users_box {
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.company-dev-users__cards {
+    width: 18rem;
+    height: 20rem;
+    border-radius: 12px;
+    background: red;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+/* 
+    CARD HEADER
+*/
+
+.users-cards-header {
+    border-radius: 12px 12px 0 0;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+}
+
+.users-cards-header__banner {
+    width: 100%;
+    min-height: 5rem;
+    max-height: 5rem;
+    border-radius: 12px 12px 0 0;
+}
+
+.users-cards-header__banner > img {
+    border-radius: 12px 12px 0 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.users-cards-header__perfil {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    position: absolute;
+    transform: translate(-50%,-50%);
+    top: 100%;
+    left: 50%;
+}
+
+.users-cards-header__perfil > img {
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    object-fit: contain;
+}
+
+/* 
+    USER MAIN
+*/
+
+.users-cards-main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: aliceblue;
+    margin-top: 1em;
+}
+
+.users-cards-main > h1,p {
+    margin: 0;
+}
+
+.users-cards-main h1 {
+    width: 8em;
+    word-wrap: break-word;
+    text-align: center;
+    display: inline-block;
+    font-size: 17px;
+    text-transform: capitalize;
+}
+
+.users-cards-main p {
+    word-wrap: break-word;
+    letter-spacing: .2px;
+    font-weight: 300;
+    font-size: 14px;
+    color: #767676;
+    text-align: start;
+    width: 90%;
+}
+
+
