@@ -1,8 +1,9 @@
 import { LoginHome } from "../../components/Home/LoginHome/LoginHome";
+import './Login.css'
 
 function Login() {
   return (
-    <div className="cnt">
+    <div className="app-login">
       <LoginHome />
     </div>
   );
