@@ -2,8 +2,8 @@ import React from "react";
 import perfil1 from '../../../assets/Home/assetsHome/perfil-1.jpg';
 import perfil2 from '../../../assets/Home/assetsHome/perfil-22.jpg';
 import perfil3 from '../../../assets/Home/assetsHome/perfil-3.jpg';
-import desarrollador from '../../../assets/Home/assetsHome/perfil-desarrollador.jpg';
-import empresa from '../../../assets/Home/assetsHome/perfil-empresa.jpg';
+import desarrollador from '../../../assets/Home/assetsHome/desarrollador.svg';
+import empresa from '../../../assets/Home/assetsHome/empresa.svg';
 import './MainHome.css'
 
 const MainHome = () => {
