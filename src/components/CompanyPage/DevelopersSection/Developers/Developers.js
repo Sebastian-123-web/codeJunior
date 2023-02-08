@@ -3,7 +3,7 @@ import SearchDevelopers from '../SearchDevelopers/SearchDevelopers'
 import './Developers.css'
 import { useState, useEffect } from 'react'
 import { DataComDev } from '../../../../services/Company/DataComDevs'
-import Perfildeveloper from '../../../../pages/Developers/Perfil/Perfil'
+import PerfildeveloperCompany from '../../Developers/Perfil/PerfilDeveloperCompany'
 
 export default function Developers() {
   const [ data, setData ] = useState([]);
@@ -56,7 +56,7 @@ export default function Developers() {
       <section className={`company-dev-users-modal ${modal && 'activeCompany-dev-users-modal'}`} >
         <div className={`background-modal ${modal && 'activeBackground-modal'}`} onClick={() => setModal(!modal)}></div>
         <section className={`dev-users_modal ${modal && 'activeDev-users_modal'}`}>
-          <Perfildeveloper/>
+          <PerfildeveloperCompany/>
         </section>
       </section>
     </section>

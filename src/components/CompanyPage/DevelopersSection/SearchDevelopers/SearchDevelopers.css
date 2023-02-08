@@ -5,14 +5,19 @@
 }
 
 .company-dev-search_box {
+    margin-left: 1rem;
     display: flex;
+    width: 35rem;
+    border-radius: 15px;
+    border: 1px solid #000;
 }
 
 .company-dev-search_box > input {
     /* font-family: 'Poppins', sans-serif; */
     width: 30rem;
-    height: 2.5rem;
+    height: 45.2px;
     border-radius: 15px 0 0 15px;
+    border: none;
     outline: none;
     font-size: 18px;
     line-height: 1.1;
@@ -20,11 +25,13 @@
 }
 
 .company-dev-search_box > button {
+    width: 5rem;
     background: #F8F8F8;
     cursor: pointer;
     height: 45.2px;
     border-radius: 0 15px 15px 0;
     border-left: 0;
+    border: none;
 }
 
 .company-dev-search_box > button:hover {
