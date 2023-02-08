@@ -5,6 +5,8 @@ import Perfil from "../pages/Perfil/Perfil";
 import Notifications from '../components/CompanyPage/Notifications/Notifications'
 import Logout from '../components/CompanyPage/Logout/Logout'
 import Home from "../pages/Home/Home";
+import MenuDeveloper from '../components/DevelopersPage/MenuDeveloper/MenuDeveloper'
+import Perfildeveloper from "../pages/Developers/Perfil/Perfil";
 
 export const Router = () => {
     return (
@@ -16,6 +18,9 @@ export const Router = () => {
                     <Route path="developers" element={<Developers/>}/>        
                     <Route path="notifications" element={<Notifications/>}/>        
                     <Route path="logout" element={<Logout/>}/>  
+                </Route>
+                <Route path="/developers" element={<MenuDeveloper />} >
+                    <Route path="perfilDeveloper" element={<Perfildeveloper/> } />
                 </Route>
             </Routes>
         </BrowserRouter>
