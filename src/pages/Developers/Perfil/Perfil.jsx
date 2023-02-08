@@ -4,7 +4,7 @@ import { DataDevCom } from '../../../services/DataDevCom'
 
 const Perfildeveloper = () => {
 
-    const [ dev, setDev ] = useState([])
+    const [ dev, setDev ] = useState({})
 
     const fetchDev = async(id, dev) => {
         const dataDev = await DataDevCom(id, dev);
@@ -18,7 +18,7 @@ const Perfildeveloper = () => {
     return (
         <div className="container">
             <div className="header-dev">
-                <img src="https://cdn.domestika.org/c_limit,dpr_auto,f_auto,q_auto,w_820/v1425034585/content-items/001/228/844/sesion-estudio-barcelona-10-original.jpg?1425034585" alt="" className="photo-perfil" width={100} />
+                <img src={dev.foto_perfil} alt="" className="photo-perfil" width={100} />
             </div>
             <div className="data-dev">
                 <div className="col">
@@ -32,9 +32,9 @@ const Perfildeveloper = () => {
                     <div className="about-me card">
                         <h2 className="subtitle"><ion-icon name="person"></ion-icon> Sobre mi</h2>
                         <p>{dev.biografia}</p>
-                        <a href="" target="_blank" className="link"><ion-icon name="logo-github"></ion-icon> @miguel-rodriguez</a>
-                        <a href="" target="_blank" className="link"><ion-icon name="globe-outline"></ion-icon> https://portafolio.com</a>
-                        <a href="" target="_blank" className="link"><ion-icon name="logo-linkedin"></ion-icon> @Miguel Rodriguez</a>
+                        <a href="#" target="_blank" className="link"><ion-icon name="logo-github"></ion-icon> @miguel-rodriguez</a>
+                        <a href="#" target="_blank" className="link"><ion-icon name="globe-outline"></ion-icon> https://portafolio.com</a>
+                        <a href="#" target="_blank" className="link"><ion-icon name="logo-linkedin"></ion-icon> @Miguel Rodriguez</a>
                     </div>
                 </div>
                 <div className="col">
@@ -67,11 +67,8 @@ const Perfildeveloper = () => {
                     <div className="skills card">
                         <h2 className="subtitle"><ion-icon name="build"></ion-icon> Tecnologias Dominadas</h2>
                         <div className="skills-icon">
-                            {/* {
-                                Object.keys(dev.tecnologia).map((i) => (
-                                    <img src={i.icon} alt={i.name} className="img-skill" />
-                                ))
-                            } */}
+                            {/* {dev.experiencia.length} */}
+                            <img src="" alt="" className="img-skill" />
                         </div>
                     </div>
                 </div>
