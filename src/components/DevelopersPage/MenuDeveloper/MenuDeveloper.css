@@ -91,6 +91,8 @@
     display: flex;
     align-items: center;
     transition: all .3s;
+    color: #fff;
+    text-decoration: none;
 }
 
 /* 

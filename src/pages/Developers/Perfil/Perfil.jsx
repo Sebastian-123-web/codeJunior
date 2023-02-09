@@ -5,18 +5,31 @@ import Tecnologias from '../../../components/DevelopersPage/perfil/Tecnologias'
 import Experiencia from '../../../components/DevelopersPage/perfil/Experiencia'
 import Educacion from '../../../components/DevelopersPage/perfil/Educacion'
 import SobreMi from '../../../components/DevelopersPage/perfil/SobreMi'
+import InformacionDev from '../../../components/DevelopersPage/perfil/InformacionDev'
+
+import Skeleton from 'react-loading-skeleton'
+import 'react-loading-skeleton/dist/skeleton.css'
 
 const Perfildeveloper = () => {
 
-    const [ dev, setDev ] = useState({})
+    const [ dev, setDev ] = useState({});
+    const [id, setId] = useState(2);
+    const [tec, setTec] = useState([]);
+    const [exp, setExp] = useState([]);
+    const [edu, setEdu] = useState([]);
+    const [sob, setSob] = useState([]);
 
     const fetchDev = async(id, dev) => {
         const dataDev = await DataDevCom(id, dev);
         setDev(dataDev);
+        setTec(dataDev.tecnologia);
+        setExp(dataDev.experiencia);
+        setEdu(dataDev.educacion);
+        setSob(dataDev.redes);
     }
 
     useEffect( () => {
-        fetchDev(2, "developers");
+        fetchDev(id, "developers");
     }, [] )
 
     return (
@@ -26,19 +39,13 @@ const Perfildeveloper = () => {
             </div>
             <div className="data-dev">
                 <div className="col">
-                    <div className="info-dev mb card">
-                        <h2 className="name-dev"><ion-icon name="person"></ion-icon> { dev.nombre + " " + dev.apellido }</h2>
-                        <h4 className="job-dev"><ion-icon name="code-outline"></ion-icon> { dev.cargo }</h4>
-                        <p><ion-icon name="call-outline"></ion-icon> { dev.telefono }</p>
-                        <p><ion-icon name="mail-outline"></ion-icon> {dev.correo}</p>
-                        <button className="btn-edit">Editar Perfil</button>
-                    </div>
-                    <SobreMi />
+                    <InformacionDev nombre={dev.nombre} apellido={dev.apellido} cargo={dev.cargo} telefono={dev.telefono} correo={dev.correo} />
+                    <SobreMi bio={dev.biografia} sob={sob} />
                 </div>
                 <div className="col">
-                    <Educacion />
-                    <Experiencia />
-                    <Tecnologias />
+                    <Educacion educacion={edu} />
+                    <Experiencia experiencia={exp} />
+                    <Tecnologias tecnologia={tec} />
                 </div>
             </div>
         </div>

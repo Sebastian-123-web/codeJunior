@@ -1,25 +1,26 @@
 import { useEffect, useState } from "react";
-import { DataDevCom } from "../../../services/DataDevCom";
 
-const Tecnologias = () => {
-    const [ tec, setTec ] = useState([]);
+const Tecnologias = (props) => {
+    const [ array, setArray ] = useState([]);
 
-    const fetchTec = async(id, type) => {
-        const dataTec = await DataDevCom(id, type);
-        setTec(dataTec.tecnologia);
+    const fetchTec = () => {
+        setArray(props.tecnologia)
     }
-    useEffect( ()=>{
-        fetchTec(2, "developers")
-    }, [] )
+
+    useEffect(()=>{
+        fetchTec()
+    }, [props.tecnologia] )
 
     return (
         <>
             <div className="skills card">
                 <h2 className="subtitle"><ion-icon name="build"></ion-icon> Tecnologias Dominadas</h2>
                 <div className="skills-icon">
-                    {tec.length > 0 && tec.map((t)=>(
-                        <img key={t.icon} src={t.icon} alt={t.name} className="img-skill" />
-                    ))}
+                    {
+                        array.map((t)=>(
+                            <img key={t.icon} src={t.icon} alt={t.name} className="img-skill" />    
+                        ))
+                    }
                 </div>
             </div>
         </>

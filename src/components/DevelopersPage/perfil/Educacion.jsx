@@ -1,19 +1,15 @@
 import { useEffect, useState } from "react";
-import { DataDevCom } from "../../../services/DataDevCom";
 
-
-const Educacion = () => {
-
+const Educacion = (props) => {
     const [edu, setEdu] = useState([]);
 
-    const fetchEdu = async(id, type) => {
-        const dataEdu = await DataDevCom(id, type);
-        setEdu(dataEdu.educacion);
+    const fetchEdu = () => {
+        setEdu(props.educacion);
     }
 
     useEffect(()=>{
-        fetchEdu(2, "developers");
-    },[])
+        fetchEdu();
+    }, [props.educacion])
 
     return (
         <div className="education card mt mb">

@@ -1,31 +1,25 @@
 import { useEffect, useState } from "react";
-import { DataDevCom } from "../../../services/DataDevCom";
 
-
-const SobreMi = () => {
-
+const SobreMi = (props) => {
     const [ sob, setSob ] = useState([]);
 
-    const fetchSob = async(id, type) => {
-        const dataSob = await DataDevCom(id, type);
-        setSob(dataSob);
+    const fetchSob = () => {
+        setSob(props.sob);
     }
 
     useEffect(()=>{
-        fetchSob(2, "developers");
-    },[])
+        fetchSob();
+    },[props.sob,props.bio])
 
     return(
         <div className="about-me card">
             <h2 className="subtitle"><ion-icon name="person"></ion-icon> Sobre mi</h2>
-            <p>{ sob.biografia }</p>
+            <p>{props.bio}</p>
             {
-                sob.redes.length > 0 && sob.redes.map((s)=>(
-                    <a href={s.link} target="_blank" className="link"><ion-icon name="logo-github"></ion-icon> @</a>
+                sob.length > 0 && sob.map((s)=>(
+                    <a href={s.link} target="_blank" className="link"><ion-icon name={s.web}></ion-icon> @{s.name} </a>
                 ))
             }
-            <a href="#" target="_blank" className="link"><ion-icon name="globe-outline"></ion-icon> https://portafolio.com</a>
-            <a href="#" target="_blank" className="link"><ion-icon name="logo-linkedin"></ion-icon> @Miguel Rodriguez</a>
         </div>
     )
 }

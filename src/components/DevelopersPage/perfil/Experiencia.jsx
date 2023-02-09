@@ -1,17 +1,15 @@
 import { useEffect, useState } from "react";
-import { DataDevCom } from "../../../services/DataDevCom";
 
-const Experiencia = () => {
+const Experiencia = (props) => {
 
     const [ exp, setExp ] = useState([]);
 
-    const fetchExp = async(id, type) => {
-        const dataExp = await DataDevCom(id, type);
-        setExp(dataExp.experiencia);
+    const fetchExp = () => {
+        setExp(props.experiencia);
     }
     useEffect( ()=>{
-        fetchExp(2, "developers")
-    }, [] )
+        fetchExp()
+    }, [props.experiencia] )
 
     return (
         <div className="my-experience card mb">
@@ -21,7 +19,7 @@ const Experiencia = () => {
                     <div className="business">
                         <div className="business-info">
                             <div className="business-name">
-                                <h3><ion-icon name="business"></ion-icon> {e.name_biss}</h3>
+                                <h3 key={e.name_biss}><ion-icon name="business"></ion-icon> {e.name_biss}</h3>
                                 <p><ion-icon name="calendar"></ion-icon> {e.rang_fecha}</p>
                             </div>
                             <p>{e.cargo}</p>
