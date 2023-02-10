@@ -1,7 +1,7 @@
 
-export const DataComDev = async() => {
+export const DataComDev = async(data) => {
     // try {
-        const response = await fetch(`https://63e1176059bb472a74308398.mockapi.io/api/v1/developers`);
+        const response = await fetch(`https://63e1176059bb472a74308398.mockapi.io/api/v1/${data}`);
         const DataDevCom = await response.json();
         return DataDevCom;
     // } catch (error) {

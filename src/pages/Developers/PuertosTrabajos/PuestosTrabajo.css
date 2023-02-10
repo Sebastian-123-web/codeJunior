@@ -18,20 +18,41 @@
     width: 100%;
     max-width: 1200px;
     margin: auto;
+    font-family: 'Poppins', sans-serif;
+    font-size: 14px;
+    box-sizing: border-box;
 }
 .banner{
-    margin-bottom: 20px;
+    margin-bottom: 40px;
+    margin-top: 50px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: #10828c63;
+    padding: 20px;
+    border-radius: 8px;
+}
+.banner-50{
+    width: 50%;
+    text-align: center;
+    font-size: 2em;
+    color: #3f3d56;
+}
+.banner-img{
+    width: 300px;
 }
 
 .search_job{
-    margin-bottom: 50px;
+    margin-bottom: 40px;
 }
 .search_job_-input{
     width: 50%;
     border-radius: 8px;
     border: none;
-    padding: 8px 17px;
+    padding: 15px 17px;
     background-color: #ecf1f4;
+    font-size: 1.2em;
+    font-weight: bold;
 }
 
 .jobs{
