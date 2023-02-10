@@ -1,6 +1,6 @@
 import { NavLink, Outlet } from 'react-router-dom'
 import { useState } from 'react'
-import './MenuDeveloper.css'
+// import './MenuDeveloper.css'
 
 import developer from '../../../assets/MenuEnterpriseIcons/developer.png'
 import logout from '../../../assets/MenuEnterpriseIcons/logout.png'
