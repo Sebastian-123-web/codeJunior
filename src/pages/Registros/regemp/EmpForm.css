@@ -1,0 +1,65 @@
+.tarjeta12 {
+  background-color: rgb(255, 255, 255);
+  height: 70%;
+  width: 50%;
+  border-radius: 30px;
+  border: #000000 solid 2px;
+}
+.left_Emp {
+  height: 90%;
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.right_Emp {
+  height: 90%;
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.boton_Emp {
+  height: 20%;
+  width: 100%;
+   display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.boton_Emp button {
+  background-color: #10828c;
+  color: #e9f8e4;
+  font-size: 30px;
+  height: 50%;
+  width: 70%;
+  border: none;
+  border-radius: 15px;
+}
+.a_Emp {
+  margin-top: 30px;
+  height: 10%;
+  width: 80%;
+  
+}
+.a_Emp input{
+  width: 100%;
+}
+.width_select select{
+  width: 100%;
+  height:60% ;
+  border-radius:15px ;
+  margin-top: 18px;
+}
+.doc_Emp{
+  display: flex;
+  justify-content:space-around;
+    width: 80%;
+  
+}
+.doc_Emp select {
+  width:90% ;
+  margin-top: 20px;
+  margin-right:10px ;
+  height: 30px;
+border-radius:15px ;
+}
