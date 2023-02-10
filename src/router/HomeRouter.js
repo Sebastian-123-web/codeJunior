@@ -9,6 +9,7 @@ import MenuDeveloper from '../components/DevelopersPage/MenuDeveloper/MenuDevelo
 import Perfildeveloper from "../pages/Developers/Perfil/Perfil";
 import PuestosTrabajos from "../pages/Developers/PuertosTrabajos/PuestosTrabajo";
 import Skeleton, { SkeletonTheme } from 'react-loading-skeleton'
+import Login from '../pages/Home/Login'
 
 export const Router = () => {
     return (
@@ -16,6 +17,7 @@ export const Router = () => {
         <BrowserRouter>
             <Routes>
                 <Route path="/" element={<Home/>}/>
+                <Route path="/login" element={<Login />}/>
                 <Route path="/mn" element={<MenuEnterprise/>}>
                     <Route path="perfil" element={<Perfil/>}/>
                     <Route path="developers" element={<Developers/>}/>        

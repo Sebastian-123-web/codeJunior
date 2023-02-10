@@ -38,16 +38,7 @@ const MainHome = () => {
                     <h2>Testimonios</h2>
                     <p>¿Que dicen de nosotros?</p>
                     <div className="card-containers">
-
-                        <div id="carouselExampleIndicators" className="carousel slide movements">
-                            <div className="carousel-indicators">
-                                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" className="active" aria-current="true" aria-label="Slide 1"></button>
-                                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
-                                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
-                            </div>
-                            <div className="carousel-inner">
-                                <div className="carousel-item active">
-                                    <div className="card-carrousels d-block w-100" id="card-carrousel-1">
+                                    <div className="card-carrousels" id="card-carrousel-1">
                                         <div className="cards" id="card-1">
                                             <p className="card-star">★★★★★</p>
                                             <img className="cards-img" src={perfil1} alt="perfil 1" />
@@ -56,11 +47,8 @@ const MainHome = () => {
                                             <p className="card-text">CEO empresa 1</p>
                                         </div>
                                     </div>
-                                </div>
 
-                                <div className="carousel-item">
-                                
-                                    <div className="card-carrousels d-block w-100" id="card-carrousel-2">
+                                    <div className="card-carrousels" id="card-carrousel-2">
                                         <div className="cards" id="card-2">
                                             <p className="card-star">★★★★★</p>
                                             <img className="cards-img" src={perfil2} alt="perfil 2" />
@@ -69,11 +57,8 @@ const MainHome = () => {
                                             <p className="card-text">CTO empresa 2</p>
                                         </div>
                                     </div>
-
-                                </div>
-                                <div className="carousel-item">
                                 
-                                    <div className="card-carrousels d-block w-100" id="card-carrousel-3">
+                                    <div className="card-carrousels" id="card-carrousel-3">
                                         <div className="cards" id="card-3">
                                             <p className="card-star">★★★★★</p>
                                             <img className="cards-img" src={perfil3} alt="perfil 3" />
@@ -82,18 +67,6 @@ const MainHome = () => {
                                             <p className="card-text">CEO y fundador empresa 3</p>
                                         </div>
                                     </div>   
-
-                                </div>
-                            </div>
-                            <button className="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
-                                <span className="carousel-control-prev-icon" aria-hidden="true"></span>
-                                <span className="visually-hidden">Previous</span>
-                            </button>
-                            <button className="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
-                                <span className="carousel-control-next-icon" aria-hidden="true"></span>
-                                <span className="visually-hidden">Next</span>
-                            </button>
-                        </div>
                         
                     </div>
                 </section>
