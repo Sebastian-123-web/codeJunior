@@ -30,10 +30,11 @@
 
 .principal > .img-container:nth-child(2){
     background-color: #F8F5E4;
+    background-color: rgb(16,130,140,0.4);
 }
 
 .btn-1-principal{
-    width: 160px;
+    width: 180px;
     padding: 12px 20px;
     border: none;
     font-size: 20px;
@@ -53,7 +54,7 @@
 }
 
 .btn-2-principal{
-    width: 160px;
+    width: 180px;
     padding: 12px 20px;
     border: none;
     font-size: 20px;
@@ -82,12 +83,11 @@
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    background-color: rgb(249,115,0);
 }
 
 .content-left, .content-rigth{
-    width: calc( 50% - 1px );
-    height: 250px;
+    width: 50%;
+    height: 300px;
     min-width: 310px;
     display: flex;
     align-items: center;
@@ -95,9 +95,6 @@
     flex-direction: column;
 }
 
-.content-left{
-    border-right: 2px solid #F8F5E4;
-}
 
 .content-title{
     width: 70%;
@@ -107,36 +104,45 @@
     font-weight: bolder;
 }
 
+.content-title-1{
+    background-color: rgb(16,130,140,0.6);
+}
+
+.content-title-2{
+    background-color: rgb(16,130,140,0.4);
+}
+
 .content-text{
     width: 60%;
     margin: 0;
     height: 200px;
-    color: #fff;
+    color: #FFF;
     font-weight: bolder;
 }
 
 .testimonials{
     width: 100%;
     height: auto;
-    padding: 30px 0;
+    padding-top: 30px;
+    padding-bottom: 60px;
     display: flex;
     flex-direction: column;
     align-items: center;
-    background-color: #10828c;
+    background-color: #FFF;
 }
 
 .testimonials h2{
     color: #9D27BA;
     text-align: center;
     margin: 10px 0;
-    font-size: 24px;
+    font-size: 30px;
     font-weight: bolder;
 }
 
 .testimonials p{
-    color: #fff;
+    color: #000;
     text-align: center;
-    font-size: 34px;
+    font-size: 44px;
     margin-top: 10px;
     margin-bottom: 20px;
     font-weight: bolder;
@@ -151,7 +157,6 @@
     align-items: center;
     position: relative;
     /*overflow: hidden;*/
-    background-color: rgb(16,120,120);
     
 }
 
@@ -176,7 +181,7 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    background-color: #0f0f0f;
+    background-color: #10828C;
 }
 
 .testimonials .cards p{

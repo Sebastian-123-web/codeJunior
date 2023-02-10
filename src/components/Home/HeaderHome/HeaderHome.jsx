@@ -11,7 +11,7 @@ const HeaderHome = () => {
                     <ul className="navigator-list">
                         <li className="navigator-item"><Link className="target" to="/" target="_self">inicio</Link></li>
                         <li className="navigator-item"><Link className="target" to="/" target="_self">acerca de</Link></li>
-                        <li className="navigator-item"><Link to="/login" ><button className="btn-navigator">login</button></Link></li>
+                        <li className="navigator-item"><Link className="target-btn" to="/login" ><button className="btn-navigator">login</button></Link></li>
                     </ul>
                 </nav>
             </header>

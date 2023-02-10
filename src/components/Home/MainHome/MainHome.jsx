@@ -25,12 +25,12 @@ const MainHome = () => {
                     
                 </section>
                 <section className="content">
-                    <div className="content-left">
-                        <h2 className="content-title">Como funcionamos?</h2>
+                    <div className="content-left content-title-1">
+                        <h2 className="content-title ">Como funcionamos?</h2>
                         <p className="content-text">Te ayudamos a encontrar el candidato ideal para tu empresa a traves de un proceso de seleccion de candidatos con perfil orientado a desarrollo de software podras visualizar los perfiles de diferentes desarrolladores de software.</p>
                     </div>
-                    <div className="content-rigth">
-                        <h2 className="content-title">Desarrollador Junior</h2>
+                    <div className="content-rigth content-title-2">
+                        <h2 className="content-title ">Desarrollador Junior</h2>
                         <p className="content-text">Si buscas iniciar tu primera experiencia laboral en el desarrollo de software o cuentas con una experiencia menor a 2 años, podras conectarte con reconocidas empresas del rubro con la que podras entrar en contacto.</p>
                     </div>
                 </section>

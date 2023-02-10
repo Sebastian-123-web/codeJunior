@@ -58,7 +58,7 @@
 .container-left p{
     color: #fff;
     margin: 0;
-    padding: 18px;
+    padding: 18px 0;
 }
 
 .here, .home{
@@ -68,6 +68,10 @@
 .container__form{
     width: 100%;
     height: 60%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
 }
 
 .container__inputs{
@@ -75,29 +79,34 @@
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
+    align-items: center;
     margin-bottom: 20px;
 }
 
+.container__inputs p{
+    padding: 10px 0;
+}
+
 .container-select{
-    width: 90%;
+    width: 80%;
     height: 18%;
     padding: 6px 10px;
     border-radius: 20px;
     border: none;
+    margin: 10px 0;
 }
 
 .user__label--1, .password__label--2{
-    width: 100%;
+    width: 80%;
     height: 18%;
-    
+    margin: 10px 0;
 }
 .user, .pswd{
     display: block;
-    width: 80%;
+    width: 100%;
     border: 2px solid #C4C4C4;
     padding: 6px 10px;
     border-radius: 20px;
-    margin: 20px;
 }
 .user:hover, .pswd:hover{
     border: 2px solid #580AAF;
