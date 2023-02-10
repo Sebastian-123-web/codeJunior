@@ -29,19 +29,19 @@ const FooterHome = () => {
                             </div>
                         </div>
                     </div>
-                    <nav className="navigator-bar">
+                    {/*<nav className="navigator-bar">
                         <ul className="navigator-list">
                             <li className="navigator-item">inicio</li>
                             <li className="navigator-item">acerca de</li>
                             <li className="navigator-item">login</li>
                         </ul>
-                    </nav>
+                    </nav>*/}
                     <div className="copyright">
                         <div className="copyright-cover">
                             <p className="copyright-text">© Copyright 2023</p><span className="copyright-extend">CodeJuniors</span>
                         </div>
                     </div>
-                </header>
+               </header>
             </footer>
         </>
     )
