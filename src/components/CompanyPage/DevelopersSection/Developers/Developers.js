@@ -11,7 +11,7 @@ export default function Developers() {
   const [ userId, setUserId ]= useState("")
 
   const DataDevCom = async () => {
-    const response = await DataComDev();
+    const response = await DataComDev("developers");
     setData(response)
     console.log(response)
   }

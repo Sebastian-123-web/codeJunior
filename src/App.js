@@ -4,7 +4,7 @@ import { Router } from './router/HomeRouter';
 function App() {
   return (
     <div className="company-user">
-      <Router/>
+      <Router />
     </div>
   );
 }

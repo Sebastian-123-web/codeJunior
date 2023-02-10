@@ -1,30 +1,52 @@
-import React from "react";
+import React, { useEffect } from "react";
 import { useState } from "react";
 import image from '../../../assets/Home/assetsHome/trabajoremoto.jpg';
 import './LoginHome.css'
-import { Link } from "react-router-dom";
+import { Link, redirect } from "react-router-dom";
 import Swal from "sweetalert2";
+import {DataComDev} from '../../../services/Company/DataComDevs'
 
 const LoginHome = () => {
 
     const[form,setForm] = useState({});
+    const [dev, setDev] = useState([]);
 
     const handleChange = (e) => {
         setForm({
             ...form,
             [e.target.name]: e.target.value,
         })
+    }
 
+    const fetchDev = async() =>{
+        const data = await DataComDev('developers');
+        setDev(data)
     }
 
     const handleSubmit  = (e)  => {
         e.preventDefault();
-        Swal.fire({
-            title : "Envio exitoso",
-            text : "El formulario, se ha enviado",
-            icon:"success",
-        });
+
+        const correo = dev.some((c)=>(c.correo === form.fuser));
+        const password = dev.some((c)=>(c.password === form.fpassword));
+
+        if(correo && password){
+            Swal.fire({
+                title : "Datos Correctos",
+                icon:"success",
+            });
+            return redirect('/');
+        }else{
+            Swal.fire({
+                title : "Correo y/o contraseña Erronas",
+                icon:"error",
+            });
+        }
+
     }
+
+    useEffect(()=>{
+        fetchDev()
+    },[])
 
     return(
         <div className="container-login">
