@@ -1,6 +1,6 @@
 import React from "react";
 import { useState } from "react";
-import image from '../../../assets/Home/assetsHome/trabajoremoto.jpg';
+import image from '../../../assets/Home/assetsHome/undraw-login.svg';
 import './LoginHome.css'
 import { Link } from "react-router-dom";
 import Swal from "sweetalert2";
@@ -29,15 +29,16 @@ const LoginHome = () => {
     return(
         <div className="container-login">
             <div className="container-right">
-                <div className="text-container">
-                    <h2 className="logo">Dev<span className="logo-extend">Juniors</span></h2>
-                    <p>Descubre todas las oportunidades laborales y candidatos disponibles para ti ingresando  a nuestra plataforma, puedes ingresar como desarrollador o como empresa dependiendo del perfil</p>
-                </div>
+                
                 <div className="image-lgn-container">
                     <img src={image}  alt="trabajo remoto" />
                 </div>
             </div>
             <div className="container-left">
+                <div className="text-container">
+                    <h2 className="logo logoform">Dev<span className="logo-extend">Juniors</span></h2>
+                    <p>Descubre todas las oportunidades laborales y candidatos disponibles para ti ingresando  a nuestra plataforma, puedes ingresar como desarrollador o como empresa dependiendo del perfil</p>
+                </div>
                 <p>Bienvenido a DevJuniors, eres nuevo registrate <Link className="here" to="/">aqui</Link> o vuelve al <Link className="home" to="/">inicio</Link></p>
                 <form className="container__form" action="/" onSubmit={handleSubmit}>
                     <div className="container__inputs">
