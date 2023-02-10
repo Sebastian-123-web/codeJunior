@@ -14,7 +14,7 @@ const SobreMi = (props) => {
     return(
         <div className="about-me card">
             <h2 className="subtitle"><ion-icon name="person"></ion-icon> Sobre mi</h2>
-            <p>{props.bio}</p>
+            <p className="p">{props.bio}</p>
             {
                 sob.length > 0 && sob.map((s)=>(
                     <a href={s.link} target="_blank" className="link"><ion-icon name={s.web}></ion-icon> @{s.name} </a>

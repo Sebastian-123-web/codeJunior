@@ -20,9 +20,9 @@ const Experiencia = (props) => {
                         <div className="business-info">
                             <div className="business-name">
                                 <h3 key={e.name_biss}><ion-icon name="business"></ion-icon> {e.name_biss}</h3>
-                                <p><ion-icon name="calendar"></ion-icon> {e.rang_fecha}</p>
+                                <p className="p"><ion-icon name="calendar"></ion-icon> {e.rang_fecha}</p>
                             </div>
-                            <p>{e.cargo}</p>
+                            <p className="p">{e.cargo}</p>
                         </div>
                         <img src={e.logo_biss} alt="" className="photo-business" height={57} width={57} />
                     </div>
