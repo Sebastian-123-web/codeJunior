@@ -1,17 +1,17 @@
 .container-login{
     width: 100%;
-    min-height: 100vh;
+    height: 70%;
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
     align-items: center;
-    background-color: #F8F5E4;
 }
 
 .container-right, .container-left{
     width: 25%;
     min-width: 300px;
-    height: 600px;
+    height: 90%;
+    max-height: 430px;
     padding: 20px;
     background-color: #10828C;
 }
@@ -31,7 +31,7 @@
     border-bottom-right-radius: 30px;
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    justify-content: flex-start;
     align-items: center;
 }
 
@@ -57,28 +57,39 @@
 
 .container-left p{
     color: #fff;
+    margin: 0;
+    padding: 18px;
 }
 
 .here, .home{
     color: #FFB0FF;
 }
 
-
 .container__form{
-    width: 95%;
+    width: 100%;
     height: 60%;
 }
+
 .container__inputs{
     width: 100%;
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-between;
+    justify-content: center;
     margin-bottom: 20px;
+}
+
+.container-select{
+    width: 90%;
+    height: 18%;
+    padding: 6px 10px;
+    border-radius: 20px;
+    border: none;
 }
 
 .user__label--1, .password__label--2{
     width: 100%;
     height: 18%;
+    
 }
 .user, .pswd{
     display: block;
@@ -97,16 +108,23 @@
     width: 100%;
     display: flex;
     justify-content: center;
+    align-items: center;
 }
 .btn--submit{
+    font-size: 10px;
+    padding-top: 10px;
+    padding-bottom: 10px;
     font-size: 20px;
-    padding-top: 20px;
-    padding-bottom: 20px;
-    width: 130px;
+    width: 100px;
+    border: none;
+    outline: none;
     background-color: #580AAF;
     color: #E0E0E0;
     border-radius: 15px;
     cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .btn--submit:hover{

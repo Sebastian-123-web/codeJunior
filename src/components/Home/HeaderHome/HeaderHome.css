@@ -21,6 +21,7 @@
     width: fit-content;
     font-size: 28px;
     color: #FFB0FF;
+    padding-left: 10px;
 }
 
 .logo-extend{
@@ -32,7 +33,7 @@
     display: flex;
     justify-content: space-evenly;
     align-items: center;
-    width: 250px;
+    width: 280px;
     margin-right: 8px;
 }
 
@@ -42,7 +43,7 @@
     margin-right: 10px;
 }
 
-.navigator-item a{
+.navigator-item .target{
     text-decoration: none;
     color: #fff;
     width: fit-content;

@@ -4,4 +4,6 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    box-sizing: border-box;
+    background-color: #F8F5E4;
 }
