@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,200;0,300;0,400;0,500;1,600&display=swap');
+/* @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,200;0,300;0,400;0,500;1,600&display=swap');
 
 /* 
     MENU
@@ -11,7 +11,6 @@
 
 .outlet {
   flex-grow: 1;
-  /* background-color: #fff; */
 }
 
 .menu {
@@ -26,7 +25,6 @@
     flex-direction: column;
 }
 
-
 .menu-fixed {
   width: 4rem;
   height: 100vh;
@@ -37,9 +35,6 @@
 .menu__dc-fixed {
   width: 16rem;
 }
-
-
-
 
 .nav {
   display: flex;
@@ -96,8 +91,9 @@
     display: flex;
     align-items: center;
     transition: all .3s;
+    color: #fff;
+    text-decoration: none;
 }
-
 
 /* 
     HAMBURGUESA
@@ -142,61 +138,3 @@
   .activeLine3__bars-menu {
     transform: rotate(-45deg) translate(-4px, 2px);
   }
-
-  
-@media screen and (max-width:760px) {
-  .rola {
-    flex-direction: column;
-  }
-
-  .bars__menu {
-   display: none;
-  }
-
-  .menu {
-    position: fixed;
-    z-index: 1;
-    bottom: 0;
-    min-width: 100%;
-    height: 4rem;
-    min-height: 4rem;
-    /* background-color: red; */
-  }
-
-  .menu-fixed {
-   /* display: none; */
-    background-color: red;
-    min-width: none;
-    width: 100%;
-    height: 4rem;
-  }
-
-  .nav {
-    width: 100%;
-  height: 100%;
-  }
-
-  .list {
-    flex-direction: row !important;
-    height: 100%;
-    width: 100%;
-  }
-
-  .list li {
-    width: 1rem;
-  }
-
-  .links {
-    width: 1rem;
-    display: flex;
-    flex-direction: column;
-  }
-
-  .icon-enterprise {
-    margin: 0px !important;
-  }
-
-  .link-name {
-    display: none;
-  }
- }

@@ -1,7 +1,12 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
 
-body{
+*{
+    margin: 0;
+    padding: 0;
     box-sizing: border-box;
+}
+body{
+    font-family: 'Poppins', sans-serif;
 }
 
 /* *************************************** */
@@ -15,21 +20,25 @@ body{
     font-weight: 400;
     margin-bottom: 15px;
 }
-.p{
+
+/* p{
     margin-bottom: 10px;
-}
+} */
+
 .subtitle{
     font-size: 1.5em;
     margin-bottom: 15px;
 }
+
 .link{
     color: #F97300;
     text-decoration: none;
     margin-bottom: 10px;
 }
-ion-icon{
+
+/* ion-icon{
     font-size: 20px;
-}
+} */
 
 /* *************************************** */
 /* ********** PADDING AND MARGIN ********* */
@@ -37,9 +46,11 @@ ion-icon{
 .col{
     width: 100%;
 }
+
 .pr{
     padding-right: 15px;
 }
+
 .mb{
     margin-bottom: 15px;
 }
@@ -66,26 +77,20 @@ ion-icon{
 /* *************************************** */
 /* *************************************** */
 
-.container{
+.container2{
     width: 100%;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    margin-bottom: 15px;
-    color: #18191a;
-    font-family: 'Poppins', sans-serif;
-    font-size: 14px;
-    box-sizing: border-box;
 }
 
-.header-dev{
+.header-dev2{
     width: 100%;
     max-width: 1200px;
     height: 220px;
     position: relative;
     border-radius: 8px;
-    margin-top: 15px;
 
     background-image: url("https://timelinecovers.pro/facebook-cover/download/web-developer-coding-on-screen-hex2rgb-facebook-cover.jpg");
     background-repeat: no-repeat;
@@ -99,7 +104,7 @@ ion-icon{
     width: 200px;
     height: 200px;
     object-fit: cover;
-    border-radius: 50%;
+    border-radius: 8px;
 }
 
 .data-dev{
@@ -111,12 +116,8 @@ ion-icon{
 }
 
 .card{
-    background-color: #F8F5E4;
-    /* background-color: #133d58; */
+    background-color: #133d58;
     /* border: 1px solid #F8F5E4; */
-    -webkit-box-shadow: 0px 0px 11px -3px rgba(0,0,0,1);
--moz-box-shadow: 0px 0px 11px -3px rgba(0,0,0,1);
-box-shadow: 0px 0px 11px -3px rgba(0,0,0,1);
     border-radius: 8px;
     padding: 25px;
     display: flex;
@@ -135,8 +136,7 @@ box-shadow: 0px 0px 11px -3px rgba(0,0,0,1);
 .institution{
     display: flex;
     justify-content: space-between;
-    background-color: #eb974f;
-;
+    background-color: #0E3047;
     padding: 10px;
     border-radius: 8px;
     margin-bottom: 15PX;
@@ -157,7 +157,7 @@ box-shadow: 0px 0px 11px -3px rgba(0,0,0,1);
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    background-color: #10828ca9;
+    background-color: #10828C;
     padding: 15px;
     border-radius: 8px;
     margin-bottom: 15px;
@@ -191,28 +191,4 @@ box-shadow: 0px 0px 11px -3px rgba(0,0,0,1);
 }
 .img-skill{
     width: 50px;
-}
-
-@media screen and (min-width: 1010px) and (max-width:1080px){
-  
-}
-@media screen and (min-width: 890px) and (max-width:1300px){
-  .header-dev{
-    padding-left: 15px;
-    padding-right: 15px;
-  }
-  .data-dev{
-    padding-left: 15px;
-    padding-right: 15px;
-  }
-}
-@media screen and (max-width:890px){
-    .data-dev{
-        padding-left: 15px;
-        padding-right: 15px;
-        grid-template-columns: auto;
-    }
-    .skills{
-        margin-bottom: 70px;
-    }
 }
