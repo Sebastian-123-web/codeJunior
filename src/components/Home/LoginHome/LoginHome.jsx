@@ -2,14 +2,15 @@ import React, { useEffect } from "react";
 import { useState } from "react";
 import image from '../../../assets/Home/assetsHome/undraw-login.svg';
 import './LoginHome.css'
-import { Link, redirect } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 import Swal from "sweetalert2";
 import {DataComDev} from '../../../services/Company/DataComDevs'
 
 const LoginHome = () => {
 
-    const[form,setForm] = useState({});
+    const[form,setForm] = useState({fuser: ''});
     const [dev, setDev] = useState([]);
+    const navigate = useNavigate();
 
     const handleChange = (e) => {
         setForm({
@@ -28,13 +29,16 @@ const LoginHome = () => {
 
         const correo = dev.some((c)=>(c.correo === form.fuser));
         const password = dev.some((c)=>(c.password === form.fpassword));
+        const email = form.fuser
 
         if(correo && password){
-            Swal.fire({
-                title : "Datos Correctos",
-                icon:"success",
-            });
-            return redirect('/');
+            navigate(`/company/${form.fuser}`, {
+              replace:true,
+              state: {
+                logged: true,
+                email
+              }
+            })
         }else{
             Swal.fire({
                 title : "Correo y/o contraseña Erronas",

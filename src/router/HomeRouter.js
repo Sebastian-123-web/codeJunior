@@ -18,8 +18,8 @@ export const Router = () => {
             <Routes>
                 <Route path="/" element={<Home/>}/>
                 <Route path="/login" element={<Login />}/>
-                <Route path="/mn" element={<MenuEnterprise/>}>
-                    <Route path="perfil" element={<Perfil/>}/>
+                <Route path="company/:mn" element={<MenuEnterprise/>}>
+                    <Route index element={<Perfil/>}/>
                     <Route path="developers" element={<Developers/>}/>        
                     <Route path="notifications" element={<Notifications/>}/>        
                     <Route path="logout" element={<Logout/>}/>  
