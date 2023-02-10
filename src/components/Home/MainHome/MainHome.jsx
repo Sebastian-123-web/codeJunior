@@ -104,7 +104,7 @@ const images = [
             <ImageSrc style={{ backgroundImage: `url(${image.url})` }} />
             <ImageBackdrop className="MuiImageBackdrop-root" />
             <Image>
-              <Link className="link-buttons" to="/login">
+              <Link className="link-buttons" to="/formDev">
                 <Typography
                     component="span"
                     variant="subtitle1"

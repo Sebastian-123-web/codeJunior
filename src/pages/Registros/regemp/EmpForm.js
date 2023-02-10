@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import "./EmpForm.css";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faEye} from "@fortawesome/free-solid-svg-icons";
+// import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+// import { faEye} from "@fortawesome/free-solid-svg-icons";
 
 
 export default function EmpForm() {
@@ -165,7 +165,7 @@ const [showPassword, setShowPassword] = useState(false);
                   type="button"
                   onClick={() => setShowPassword(!showPassword)}
                 >
-                  <FontAwesomeIcon icon={faEye} />
+
                 </button>
               </div>
               <div className="a_Emp">

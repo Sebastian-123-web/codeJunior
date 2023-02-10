@@ -10,14 +10,22 @@ import Perfildeveloper from "../pages/Developers/Perfil/Perfil";
 import PuestosTrabajos from "../pages/Developers/PuertosTrabajos/PuestosTrabajo";
 import Login from '../pages/Home/Login';
 import Skeleton, { SkeletonTheme } from 'react-loading-skeleton'
+import { HeaderHome } from "../components/Home/HeaderHome/HeaderHome";
+import HomePage from "../pages/Home/HomePage/HomePage";
+import DevForm from "../pages/Registros/regdev/DevForm";
+import EmpForm from "../pages/Registros/regemp/EmpForm";
 
 export const Router = () => {
     return (
         <SkeletonTheme baseColor="#202020" highlightColor="#444">
         <BrowserRouter>
             <Routes>
-                <Route path="/" element={<Home/>}/>
-                <Route path="/login" element={<Login />}/>
+                <Route path="/" element={<Home/>}>
+                    <Route index element={<HomePage/>}/>
+                    <Route path="login" element={<Login />}/>
+                    <Route path="formDev" element={<DevForm/>}/>
+                    <Route path="formEmp" element={<EmpForm/>}/>
+                </Route>
                 <Route path="company/:mn" element={<MenuEnterprise/>}>
                     <Route index element={<Perfil/>}/>
                     <Route path="developers" element={<Developers/>}/>        
