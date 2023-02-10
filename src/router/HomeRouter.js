@@ -10,7 +10,6 @@ import Perfildeveloper from "../pages/Developers/Perfil/Perfil";
 import PuestosTrabajos from "../pages/Developers/PuertosTrabajos/PuestosTrabajo";
 import Login from '../pages/Home/Login';
 import Skeleton, { SkeletonTheme } from 'react-loading-skeleton'
-import Login from '../pages/Home/Login'
 
 export const Router = () => {
     return (

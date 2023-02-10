@@ -33,6 +33,11 @@
     background-color: rgb(16,130,140,0.4);
 }
 
+.link-buttons{
+    color: #fff;
+    text-decoration: none;
+}
+
 .btn-1-principal{
     width: 180px;
     padding: 12px 20px;
@@ -99,6 +104,7 @@
 .content-title{
     width: 70%;
     margin: 0;
+    font-size: 30px;
     padding: 15px 0;
     color: #9D27BA;
     font-weight: bolder;
@@ -116,6 +122,7 @@
     width: 60%;
     margin: 0;
     height: 200px;
+    font-size: 20px;
     color: #FFF;
     font-weight: bolder;
 }
@@ -149,23 +156,24 @@
 }
 
 .card-containers{
-    width: 70%;
+    width: 550px;
     height: 600px;
-    display: flex;
-    flex-direction: column;
+    /*display: flex;
+    flex-direction: column;*/
     /*justify-content: center;*/
-    align-items: center;
+    /*align-items: center;
     position: relative;
-    overflow: hidden;
+    overflow: hidden;*/
     
 }
 
 .card-carrousels{
     display: flex;
     justify-content: space-around;
+    
     /*flex-wrap: wrap;*/
     /*  completar una logica parecida  */
-    transition: 2s;
+    /*transition: 2s;*/
 }
 
 .movements{
@@ -182,6 +190,7 @@
     justify-content: center;
     align-items: center;
     background-color: #10828C;
+    filter: drop-shadow(8px  8px 6px #0f0f0f);
 }
 
 .testimonials .cards p{
