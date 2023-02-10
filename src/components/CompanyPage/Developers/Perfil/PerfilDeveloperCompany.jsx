@@ -2,7 +2,7 @@ import './PerfilDeveloperCompany.css'
 import { useEffect, useState } from "react"
 import { DataDevCom } from '../../../../services/DataDevCom'
 
-const PerfildeveloperCompany = () => {
+const PerfildeveloperCompany = (props) => {
 
     const [ dev, setDev ] = useState([])
 
@@ -12,8 +12,8 @@ const PerfildeveloperCompany = () => {
     }
 
     useEffect( () => {
-        fetchDev(2, "developers");
-    }, [] )
+        fetchDev(props.id, "developers");
+    }, [props.id] )
 
     return (
         <div className="container2">

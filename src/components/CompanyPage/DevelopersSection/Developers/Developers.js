@@ -8,6 +8,7 @@ import PerfildeveloperCompany from '../../Developers/Perfil/PerfilDeveloperCompa
 export default function Developers() {
   const [ data, setData ] = useState([]);
   const [ modal, setModal ] = useState(false);
+  const [ userId, setUserId ]= useState("")
 
   const DataDevCom = async () => {
     const response = await DataComDev();
@@ -26,7 +27,10 @@ export default function Developers() {
       <section className='company-dev-users'>
         <section className='company-dev-users_box'>
           {data.length > 0 && data.map((event) => (
-            <div className='company-dev-users__cards' onClick={() => setModal(!modal)}>
+            <div className='company-dev-users__cards' onClick={() => {
+              setModal(!modal);
+              setUserId(event.id);
+            }}>
 
               <div className='users-cards-header'>
                 <div className='users-cards-header__banner'>
@@ -50,13 +54,12 @@ export default function Developers() {
 
             </div>
           ))}
-
         </section>
       </section>
       <section className={`company-dev-users-modal ${modal && 'activeCompany-dev-users-modal'}`} >
         <div className={`background-modal ${modal && 'activeBackground-modal'}`} onClick={() => setModal(!modal)}></div>
         <section className={`dev-users_modal ${modal && 'activeDev-users_modal'}`}>
-          <PerfildeveloperCompany/>
+          <PerfildeveloperCompany id={userId}/>
         </section>
       </section>
     </section>
