@@ -16,7 +16,7 @@ const options = [
     'Inicio',
     'Desarrollador',
     'Empresa',
-    'Cerrar sesion',
+    'Iniciar sesion',
   ];
   
 const ITEM_HEIGHT = 70;
@@ -63,18 +63,18 @@ function LongMenu() {
               {options[0]}
             </MenuItem>
           </Link>
-          <Link className="menu-navbar-item" to="/login">
+          <Link className="menu-navbar-item" to="/registro/desarrollador">
             <MenuItem key={options[1]} selected={options[1] === 'Desarrollador'} onClick={handleClose}>
               {options[1]}
             </MenuItem>
           </Link>  
-          <Link className="menu-navbar-item" to="/login">
+          <Link className="menu-navbar-item" to="/registro/empresa">
             <MenuItem key={options[2]} selected={options[2] === 'Empresa'} onClick={handleClose}>
               {options[2]}
             </MenuItem>
           </Link> 
-          <Link className="menu-navbar-item" to="/login">
-            <MenuItem key={options[3]} selected={options[3] === 'Cerrar sesion'} onClick={handleClose}>
+          <Link className="menu-navbar-item login-header-menu" to="/login">
+            <MenuItem key={options[3]} selected={options[3] === 'Iniciar sesion'} onClick={handleClose}>
               {options[3]}
             </MenuItem>
           </Link>  
@@ -97,10 +97,14 @@ export default function ButtonAppBar() {
             >
             <LongMenu />
             </IconButton>
-            <Typography variant="h6" component="div" sx={{ flexGrow: 1 }}>
-                <h1 className="logo">Dev<span className="logo-extend">Juniors</span></h1>
-            </Typography>
-            <Link className="target-btn" to="/login" ><button className="btn-navigator">login</button></Link>
+              <Typography variant="h6" component="div" sx={{ flexGrow: 1 }}>
+              <div className="logo-box-header">
+              <Link to="/" className="logo-link">
+                  <h1 className="logo">Dev<span className="logo-extend">Juniors</span></h1>
+              </Link>
+              </div>
+              </Typography>
+            <Link className="target-btn" to="/login" ><button className="btn-navigator">Iniciar Sesión</button></Link>
           </Toolbar>
         </AppBar>
       </Box>

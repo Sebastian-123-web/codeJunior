@@ -29,6 +29,15 @@
     color: #9D27BA;
 }
 
+.logo-link {
+    text-decoration: none;
+    width: 10px !important;
+}
+
+.logo-box-header {
+    width: 4rem;
+}
+
 .logo{
     margin: 0;
     width: fit-content;
@@ -80,7 +89,6 @@
     border: 1px solid #FFB0FF;
     font-size: 18px;
     font-weight: bolder;
-    width: 68px;
     height: 40px;
     padding: 8px 12px;
     border-radius: 20px;
@@ -88,9 +96,20 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    cursor: pointer;
+    transition: all .3s;
 }
 
 .btn-navigator:hover{
     border: 1px solid #FFF;
     color: #fff;
+}
+
+@media screen and (max-width:760px) {
+    .login-header-menu {
+        display: block;
+    }
+    .target-btn {
+        display: none;
+    }
 }

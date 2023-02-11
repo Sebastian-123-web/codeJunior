@@ -15,9 +15,13 @@ export default function PerfilBannerCompany() {
         </div>
         <div className='company__description'>
           <h1 className='company__info-name'>Inetum Company</h1>
+          {/* In progress...
+
           <div className='company_share'>
             <a href='.'>Compartir</a>
           </div>
+           
+          */}
         </div>
       </section>
   )

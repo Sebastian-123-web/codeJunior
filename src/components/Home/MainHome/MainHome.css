@@ -98,6 +98,7 @@
     align-items: center;
     justify-content: center;
     flex-direction: column;
+    text-align: center;
 }
 
 
@@ -108,6 +109,7 @@
     padding: 15px 0;
     color: #9D27BA;
     font-weight: bolder;
+    text-transform: uppercase;
 }
 
 .content-title-1{
@@ -124,7 +126,10 @@
     height: 200px;
     font-size: 20px;
     color: #FFF;
-    font-weight: bolder;
+    /* font-weight: bolder; */
+    font-weight: 500;
+    font-style: italic;
+    color: #eee;
 }
 
 .home-about-us{
@@ -158,7 +163,7 @@
     padding-bottom: 60px;
     display: flex;
     flex-direction: row;
-    
+    margin: 0 auto;
     align-items: start;
     background-color: #FFF;
 }
@@ -305,4 +310,54 @@
     display: flex;
     justify-content: space-around;
     align-items: center;
+}
+
+.login-header-menu {
+    display: none;
+}
+
+@media screen and (max-width:760px) {
+    .testimonials {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+    }
+    .testimonials-home-container {
+        max-width: 100%;
+    }
+    
+    .card-containers {
+        width: 100%;
+    }
+
+    .card-carrousels {
+        width: 90%;
+        margin: 0 auto;
+    }
+    .home-contacto {
+        max-width: 100%;
+        display: flex;
+        flex-direction: column;
+    }
+    .contact-wrapper {
+        max-width: 100%;
+        display: flex;
+        flex-direction: column;
+    }
+    .map-container {
+        max-width: 100%;
+    }
+    .iframe-map {
+        max-width: 100%;
+    }
+    .content-left,
+    .content-rigth {
+        text-align: center;
+        width: 100%;
+        height: auto;
+    }
+    .content-text {
+        width: 90%;
+        height: auto;
+    }
 }

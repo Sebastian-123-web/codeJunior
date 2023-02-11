@@ -104,7 +104,7 @@ const images = [
             <ImageSrc style={{ backgroundImage: `url(${images[0].url})` }} />
             <ImageBackdrop className="MuiImageBackdrop-root" />
             <Image>
-              <Link className="link-buttons" to="/formEmp">
+              <Link className="link-buttons" to="/registro/empresa">
                 <Typography
                     component="span"
                     variant="subtitle1"
@@ -132,7 +132,7 @@ const images = [
             <ImageSrc style={{ backgroundImage: `url(${images[1].url})` }} />
             <ImageBackdrop className="MuiImageBackdrop-root" />
             <Image>
-              <Link className="link-buttons" to="/formDev">
+              <Link className="link-buttons" to="/registro/desarrollador">
                 <Typography
                     component="span"
                     variant="subtitle1"
@@ -177,14 +177,15 @@ const MainHome = () => {
                 </section>
                 <section className="content">
                     <div className="content-left content-title-1">
-                        <h2 className="content-title ">Como funcionamos?</h2>
-                        <p className="content-text">Te ayudamos a encontrar el candidato ideal para tu empresa a traves de un proceso de seleccion de candidatos con perfil orientado a desarrollo de software podras visualizar los perfiles de diferentes desarrolladores de software.</p>
+                        <h2 className="content-title ">¿Cómo funcionamos?</h2>
+                        <p className="content-text">Te ayudamos a encontrar el candidato ideal para tu empresa a traves de un proceso de seleccion de candidatos con perfil orientado a desarrollo de software podrás visualizar los perfiles de diferentes desarrolladores de software.</p>
                     </div>
                     <div className="content-rigth content-title-2">
                         <h2 className="content-title ">Desarrollador Junior</h2>
-                        <p className="content-text">Si buscas iniciar tu primera experiencia laboral en el desarrollo de software o cuentas con una experiencia menor a 2 años, podras conectarte con reconocidas empresas del rubro con la que podras entrar en contacto.</p>
+                        <p className="content-text">Si buscas iniciar tu primera experiencia laboral en el desarrollo de software o cuentas con una experiencia menor a 2 años, podrás conectarte con reconocidas empresas del rubro con las que podrás entrar en contacto.</p>
                     </div>
                 </section>
+
                 <section className="home-about-us">
                     <h2 className="about-title">Acerca de</h2>
                     <p className="about-text">Somos una joven empresa Peruana que busca potenciar la industria tecnologica, desafiando la actual manera de contratacion de talentos tecnologicos.</p>
@@ -209,7 +210,7 @@ const MainHome = () => {
                     <h2>Testimonios</h2>
                     <p>¿Que dicen de nosotros?</p>
                     <div className="card-containers">
-                            <Carousel>  
+                            <Carousel className="carrousel-box">  
                             <div className="card-carrousels" id="card-carrousel-1">
                                 <div className="cards" id="card-1">
                                     <p className="card-star">★★★★★</p>

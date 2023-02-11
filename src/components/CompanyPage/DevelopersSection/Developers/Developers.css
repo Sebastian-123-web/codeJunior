@@ -121,6 +121,8 @@ p {
 
 .company-dev-users-modal {
     /* transition: all .6s; */
+    width: 100%;
+    height: 100%;
 }
 
 .activeCompany-dev-users-modal {
@@ -146,6 +148,21 @@ p {
     z-index: 2;
     border-radius: 5px;
 }
+
+
+.company-developers {
+  overflow-y: scroll;
+  width: 100%;
+  height: 100vh;
+}
+
+.activecompany-developers {
+  overflow-y: hidden;
+  width: 100%;
+  height: 100vh;
+}
+
+
 
 .dev-users_modal::-webkit-scrollbar {
   -webkit-appearance: none;

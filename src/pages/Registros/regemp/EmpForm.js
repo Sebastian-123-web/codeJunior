@@ -2,7 +2,8 @@ import React, { useState } from "react";
 import "./EmpForm.css";
 // import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 // import { faEye} from "@fortawesome/free-solid-svg-icons";
-
+import show from '../../../assets/FormIcons/show.png'
+import hide from '../../../assets/FormIcons/hide.png'
 
 export default function EmpForm() {
  const [formData, setFormData] = useState({
@@ -37,9 +38,8 @@ const [showPassword, setShowPassword] = useState(false);
  };
 
   return (
-    <>
-      <main>
-        <section className="tarjeta12">
+    <section className="form-content">
+        <section className="tarjeta12 inputs-tarjet">
           <h2> Registro de Empresa</h2>
 
           <form className="devform" onSubmit={handleSubmit}>
@@ -151,7 +151,7 @@ const [showPassword, setShowPassword] = useState(false);
                   onChange={handleChange}
                 />
               </div>
-              <div className="a_Emp">
+              <div className="a_Emp password-ctn-form">
                 <input
                   placeholder="Password"
                   required
@@ -162,10 +162,11 @@ const [showPassword, setShowPassword] = useState(false);
                   onChange={handleChange}
                 />
                 <button
+                  className="show-password"
                   type="button"
                   onClick={() => setShowPassword(!showPassword)}
                 >
-
+                    <img className='hide-password-form' src={showPassword ? hide : show} alt='showPasswordIcon'/>
                 </button>
               </div>
               <div className="a_Emp">
@@ -207,7 +208,6 @@ const [showPassword, setShowPassword] = useState(false);
             </div>
           </form>
         </section>
-      </main>
-    </>
+    </section>
   );
 }

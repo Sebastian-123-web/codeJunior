@@ -60,7 +60,8 @@
 .list {
     width: 100%;
     height: 100vh;
-    background-color: #F97300;
+    /* background-color: #F97300; */
+    background-color: #0E3047;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -96,6 +97,9 @@
     display: flex;
     align-items: center;
     transition: all .3s;
+    text-decoration: none;
+    color: #000;
+    filter: invert(100%) sepia(100%) saturate(0%) hue-rotate(201deg) brightness(106%) contrast(106%);
 }
 
 
@@ -124,7 +128,7 @@
     display: block;
     width: 100%;
     height: 2px;
-    background: #000;
+    background: #fff;
     margin-top: 6px;
     transition: all 300ms;
     transform-origin: 0px 100%;
@@ -147,6 +151,8 @@
 @media screen and (max-width:760px) {
   .rola {
     flex-direction: column;
+    /* flex-grow: 2; */
+    height: 100vh !important;
   }
 
   .bars__menu {
@@ -187,6 +193,7 @@
   }
 
   .links {
+    border-left: none !important;
     width: 1rem;
     display: flex;
     flex-direction: column;

@@ -1,7 +1,7 @@
 import { BrowserRouter, Route, Routes } from "react-router-dom";
 import Developers from "../components/CompanyPage/DevelopersSection/Developers/Developers";
 import MenuEnterprise from "../components/CompanyPage/MenuEnterprise/MenuEnterprise";
-import Perfil from "../pages/Perfil/Perfil";
+import PerfilCompany from "../pages/Business/Perfil/Perfil";
 import Notifications from '../components/CompanyPage/Notifications/Notifications'
 import Logout from '../components/CompanyPage/Logout/Logout'
 import Home from "../pages/Home/Home";
@@ -23,11 +23,11 @@ export const Router = () => {
                 <Route path="/" element={<Home/>}>
                     <Route index element={<HomePage/>}/>
                     <Route path="login" element={<Login />}/>
-                    <Route path="formDev" element={<DevForm/>}/>
-                    <Route path="formEmp" element={<EmpForm/>}/>
+                    <Route path="/registro/desarrollador" element={<DevForm/>}/>
+                    <Route path="/registro/empresa" element={<EmpForm/>}/>
                 </Route>
-                <Route path="company/:mn" element={<MenuEnterprise/>}>
-                    <Route index element={<Perfil/>}/>
+                <Route path="business/:mn" element={<MenuEnterprise/>}>
+                    <Route index element={<PerfilCompany/>}/>
                     <Route path="developers" element={<Developers/>}/>        
                     <Route path="notifications" element={<Notifications/>}/>        
                     <Route path="logout" element={<Logout/>}/>  
