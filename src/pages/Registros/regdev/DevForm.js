@@ -1,10 +1,9 @@
 import React, {  useState } from 'react'
 import "./DevForm.css";
+import Desarrollador from "../../../assets/Home/assetsHome/desarrollador.svg";
 
 
 export default function DevForm() {
-
-
  const [formData, setFormData] = useState({
    name: "",
    surname: "",
@@ -119,7 +118,7 @@ const [showPassword, setShowPassword] = useState(false);
                   type="button"
                   onClick={() => setShowPassword(!showPassword)}
                 >
-                  {showPassword ? "Ocultar" : "Mostrar"} contraseña
+                  {showPassword ? "Ocultar" : "Mostrar"}
                 </button>
               </div>
             </div>
@@ -128,6 +127,7 @@ const [showPassword, setShowPassword] = useState(false);
             </div>
           </form>
         </section>
+<img src= {Desarrollador} alt="" />
       </main>
     </>
   );

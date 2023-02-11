@@ -63,3 +63,18 @@
   height: 30px;
 border-radius:15px ;
 }
+.a_Emp button{
+  border: none;
+  position: absolute;
+  margin-top: 25px;
+  margin-left:-55px ;
+}
+main{
+  display: flex;
+ justify-content: space-around;
+}
+
+main>img{
+height: 600px;
+border-radius: 30px;
+}
