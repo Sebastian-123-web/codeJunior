@@ -24,6 +24,11 @@
     color: #fff;
 }
 
+.menu-navbar-item{
+    text-decoration: none;
+    color: #9D27BA;
+}
+
 .logo{
     margin: 0;
     width: fit-content;
@@ -62,7 +67,7 @@
 
 .target:hover{
     background-color: #FFB0FF;
-    color: #9D27BA
+    color: #9D27BA;
 }
 
 .target-btn{

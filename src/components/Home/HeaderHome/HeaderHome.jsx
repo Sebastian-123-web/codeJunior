@@ -58,11 +58,26 @@ function LongMenu() {
             },
           }}
         >
-          {options.map((option) => (
-            <MenuItem key={option} selected={option === 'Pyxis'} onClick={handleClose}>
-              {option}
+          <Link className="menu-navbar-item" to="/">
+            <MenuItem key={options[0]} selected={options[0] === 'Inicio'} onClick={handleClose}>
+              {options[0]}
             </MenuItem>
-          ))}
+          </Link>
+          <Link className="menu-navbar-item" to="/login">
+            <MenuItem key={options[1]} selected={options[1] === 'Desarrollador'} onClick={handleClose}>
+              {options[1]}
+            </MenuItem>
+          </Link>  
+          <Link className="menu-navbar-item" to="/login">
+            <MenuItem key={options[2]} selected={options[2] === 'Empresa'} onClick={handleClose}>
+              {options[2]}
+            </MenuItem>
+          </Link> 
+          <Link className="menu-navbar-item" to="/login">
+            <MenuItem key={options[3]} selected={options[3] === 'Cerrar sesion'} onClick={handleClose}>
+              {options[3]}
+            </MenuItem>
+          </Link>  
         </Menu>
       </div>
     );
@@ -80,7 +95,7 @@ export default function ButtonAppBar() {
               aria-label="menu"
               sx={{ mr: 2 }}
             >
-              <LongMenu />
+            <LongMenu />
             </IconButton>
             <Typography variant="h6" component="div" sx={{ flexGrow: 1 }}>
                 <h1 className="logo">Dev<span className="logo-extend">Juniors</span></h1>
