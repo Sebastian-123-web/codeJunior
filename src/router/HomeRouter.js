@@ -32,8 +32,8 @@ export const Router = () => {
                     <Route path="notifications" element={<Notifications/>}/>        
                     <Route path="logout" element={<Logout/>}/>  
                 </Route>
-                <Route path="/developers" element={<MenuDeveloper />} >
-                    <Route path="perfilDeveloper" element={<Perfildeveloper/> } />
+                <Route path="/developers/:dv" element={<MenuDeveloper />} >
+                    <Route index element={<Perfildeveloper/> } />
                     <Route path="propuestasTrabajos" element={ <PuestosTrabajos /> } />
                 </Route>
             </Routes>

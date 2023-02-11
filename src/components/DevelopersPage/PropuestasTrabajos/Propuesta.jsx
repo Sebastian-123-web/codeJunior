@@ -1,8 +1,11 @@
 import { useEffect, useState } from "react";
+import Modal from "./Modal";
+import './Propuesta.css'
 
 const Propuesta = (props) => {
 
     const [pro, setPro] = useState([]);
+    const [modal, setModal] = useState(false);
 
     const fetchEdu = () => {
         setPro(props.business);
@@ -16,7 +19,7 @@ const Propuesta = (props) => {
         <div className="jobs">
             {
                 pro.length && pro.map((b)=>(
-                    <div className="job">
+                    <div className="job" onClick={()=>setModal(!modal)}>
                         <div className='job_info'>
                             <div className="job_img">
                                 <img src={b.logo_empresa} alt="" width={72} height={72} className="img-job" />
@@ -37,6 +40,12 @@ const Propuesta = (props) => {
                     </div>
                 ))
             }
+            <div className={`modal-business ${modal && 'activebusiness'}`}>
+                <section className={`modal-business-background ${modal && 'activemodalbusiness'}`} onClick={()=>setModal(!modal)}></section>
+                {/* <section className={`modal-section ${modal && 'activemodalbusiness'}`}> */}
+                    <Modal />
+                {/* </section> */}
+            </div>
         </div>
     )
 }

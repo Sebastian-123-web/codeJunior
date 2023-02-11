@@ -20,8 +20,10 @@ const LoginHome = () => {
     }
 
     const fetchDev = async() =>{
-        const data = await DataComDev('developers');
+        console.log(form.credencial);
+        const data = await DataComDev(form.credencial);
         setDev(data)
+        console.log(data)
     }
 
     const handleSubmit  = (e)  => {
@@ -32,7 +34,7 @@ const LoginHome = () => {
         const email = form.fuser
 
         if(correo && password){
-            navigate(`/company/${form.fuser}`, {
+            navigate(`/${form.credencial}/${form.fuser}`, {
               replace:true,
               state: {
                 logged: true,
@@ -45,12 +47,11 @@ const LoginHome = () => {
                 icon:"error",
             });
         }
-
     }
 
     useEffect(()=>{
         fetchDev()
-    },[])
+    },[form.credencial])
 
     return(
         <div className="container-login">
@@ -71,8 +72,8 @@ const LoginHome = () => {
                         <p>Elige si eres empresa o desarrollador</p>
                         <select name="credencial" onChange={handleChange} defaultValue="" className="container-select">
                             <option value="">-----------------------------</option>
-                            <option value="empresa">Empresa</option>
-                            <option value="desarrollador">Desarrollador</option>
+                            <option value="business">Empresa</option>
+                            <option value="developers">Desarrollador</option>
                         </select>
                         <label htmlFor="fuser" className="user__label--1">
                             <input type="text" id="fuser" name="fuser"  className="user" placeholder="Ingresa tu usuario" value={form.fuser} onChange={handleChange} autoComplete="name" required />
