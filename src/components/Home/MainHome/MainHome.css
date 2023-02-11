@@ -127,16 +127,82 @@
     font-weight: bolder;
 }
 
-.testimonials{
+.home-about-us{
     width: 100%;
+    height: auto;
+    margin: 40px 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.about-title{
+    font-size: 36px;
+    text-align: center;
+    line-height: 1.2;
+    color: #9D27BA;
+}
+
+.about-text{
+    font-size: 18px;
+    line-height: 1.2;
+    text-align: start;
+    width: 80%;
+    padding: 10px 0;
+}
+
+.testimonials{
+    width: 80%;
     height: auto;
     padding-top: 30px;
     padding-bottom: 60px;
     display: flex;
-    flex-direction: column;
-    align-items: center;
+    flex-direction: row;
+    
+    align-items: start;
     background-color: #FFF;
 }
+
+/*  diferenciales content   */
+
+.home-diferenciales{
+    width:40%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-right: 100px;
+}
+
+.diferenciales-title{
+    font-size: 36px;
+    text-align: center;
+    line-height: 1.2;
+    color: #9D27BA;
+    margin-bottom: 20px;
+}
+
+.home-list-1{
+    width: 80%;
+    height: auto;
+    /*display: flex;
+    align-items: center;
+    justify-content: space-around;*/
+}
+
+.diferenciales-list{
+    text-align: start;
+}
+
+.diferenciales-item{
+    font-size: 18px;
+    line-height: 1.2;
+    text-align: start;
+    width: 90%;
+    padding: 10px 0;
+}
+
+/*  end diferenciales item  */
 
 .testimonials h2{
     color: #9D27BA;
@@ -210,4 +276,33 @@
 
 .card-text-1{
     width: 70%;
+}
+
+.home-contacto{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+.home-contacto h2{
+    text-align: center;
+    font-size: 36px;
+    color: #9D27BA;
+    margin-bottom: 20px;
+}
+
+.contact-container p{
+    text-align: start;
+    font-size: 18px;
+    line-height: 1.2;
+    padding: 10px 0;
+}
+
+.contact-wrapper{
+    width: 80%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
 }
