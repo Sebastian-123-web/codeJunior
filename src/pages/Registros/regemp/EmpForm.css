@@ -84,4 +84,13 @@
     border-radius: 0;
     border: none;
   }
+  .left_Emp,
+  .right_Emp {
+    width: 80%;
+  }
+  .a_Emp {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
 }

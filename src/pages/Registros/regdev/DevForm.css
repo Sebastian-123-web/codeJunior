@@ -42,8 +42,8 @@
   align-items: center;
   /* justify-content: center; */
 }
-.number {
-  width: 50% !important;
+#numerodni {
+  width: 50%;
 }
 .inputs-tarjet input[type="number"]::-webkit-inner-spin-button,
 input[type="number"]::-webkit-outer-spin-button {
@@ -95,6 +95,10 @@ input[type="number"]::-webkit-outer-spin-button {
   border-radius: 15px;
   cursor: pointer;
   transition: all .3s;
+}
+
+.btn-dev-reg {
+  margin-bottom: 2rem;
 }
 
 .boton button:hover {
@@ -157,5 +161,11 @@ input[type="number"]::-webkit-outer-spin-button {
   }
   .inputs-tarjet input {
     width: 100%;
+  }
+  .a {
+    width: 70%;
+  }
+  .number {
+    width: 70% !important;
   }
 }

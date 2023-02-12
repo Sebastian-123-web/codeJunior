@@ -339,6 +339,9 @@
         display: flex;
         flex-direction: column;
     }
+    .about-text {
+        text-align: center !important;
+    }
     .contact-wrapper {
         max-width: 100%;
         display: flex;
@@ -355,9 +358,21 @@
         text-align: center;
         width: 100%;
         height: auto;
+        padding: 1rem 0 1rem 0;
     }
     .content-text {
+        /* font-size: 15px; */
+        letter-spacing: .2px;
+        line-height: 1.1;
         width: 90%;
         height: auto;
     }
+    .content-title {
+        padding-top: 0;
+    }
+    .home-diferenciales {
+        margin: 0;
+        width: 100%;
+    }
+    
 }

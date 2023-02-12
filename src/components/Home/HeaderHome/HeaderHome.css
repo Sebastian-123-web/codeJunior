@@ -6,6 +6,7 @@
     height: 70px;
     background-color: #0E3047;
     font-family: 'Poppins', sans-serif;
+    position: relative;
 }
 
 .app-header{
@@ -107,9 +108,14 @@
 
 @media screen and (max-width:760px) {
     .login-header-menu {
-        display: block;
+        display: block !important;
     }
     .target-btn {
         display: none;
+    }
+    .logo-center-header {
+        position: absolute;
+        transform: translate(-50%,-50%);
+        left: 50%;
     }
 }

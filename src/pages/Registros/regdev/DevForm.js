@@ -126,7 +126,7 @@ const [showPassword, setShowPassword] = useState(false);
                 </div>
               </div>
             </section>
-            <div className="boton ">
+            <div className="boton btn-dev-reg">
               <button type="submit">Registrarse</button>
             </div>
           </form>

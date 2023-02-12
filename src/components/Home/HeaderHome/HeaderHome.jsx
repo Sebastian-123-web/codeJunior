@@ -100,7 +100,7 @@ export default function ButtonAppBar() {
               <Typography variant="h6" component="div" sx={{ flexGrow: 1 }}>
               <div className="logo-box-header">
               <Link to="/" className="logo-link">
-                  <h1 className="logo">Dev<span className="logo-extend">Juniors</span></h1>
+                  <h1 className="logo logo-center-header">Dev<span className="logo-extend">Juniors</span></h1>
               </Link>
               </div>
               </Typography>

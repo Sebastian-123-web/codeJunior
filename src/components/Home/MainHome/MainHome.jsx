@@ -187,7 +187,7 @@ const MainHome = () => {
                 </section>
 
                 <section className="home-about-us">
-                    <h2 className="about-title">Acerca de</h2>
+                    <h2 className="about-title">¿Quiénes somos?</h2>
                     <p className="about-text">Somos una joven empresa Peruana que busca potenciar la industria tecnologica, desafiando la actual manera de contratacion de talentos tecnologicos.</p>
                     <p className="about-text">En tan solo 5 dias entregamos una terna de perfiles para que se incorporen a su equipo, y por los 3 primeros meses, este desarrollador estara en prueba.</p>
                     <p className="about-text">Nos importa que las cosas pasen con una mirada centrada en resultados, mas que en horarios y lugares fisicos, por lo que apostamos por trabajar 100% remoto y asi tambien, incentivar a nuestros clientes, a que sus contrataciones sigan en la misma linea.</p>

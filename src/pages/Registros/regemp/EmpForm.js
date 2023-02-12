@@ -92,6 +92,7 @@ const [showPassword, setShowPassword] = useState(false);
 
               <div className="doc_Em a_Emp">
                 <select
+                  className="fiscal-condition-emp"
                   name="fiscalCondition"
                   value={formData.fiscalCondition}
                   onChange={handleChange}
