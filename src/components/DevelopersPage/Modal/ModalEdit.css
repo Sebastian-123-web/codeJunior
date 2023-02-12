@@ -1,6 +1,6 @@
 .modal-editar{
     position: absolute;
-    width: 100%;
+    width: 70%;
     max-width: 800px;
     min-width: 350px;
     background-color: #fff;
@@ -32,6 +32,8 @@
     border-radius: 8px;
     background-color: #ecf1f4;
 }
+
+
 .btn{
     padding: 8px 15px;
     border-radius: 8px;
@@ -62,4 +64,14 @@
 }
 .mr-20px{
     margin-right: 20px;
+}
+
+@media screen and (max-width:880px){
+    .col-2{
+        grid-template-columns: auto;
+    }
+    .modal-editar{
+        height: 450px;
+        overflow: auto;
+    }
 }
