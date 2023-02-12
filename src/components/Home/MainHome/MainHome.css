@@ -164,8 +164,8 @@
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+    align-items: center;
     margin: 0 auto;
-    align-items: start;
     background-color: #FFF;
 }
 
@@ -173,11 +173,12 @@
 
 .home-diferenciales{
     width:40%;
-    height: auto;
+    height: 100%;
     display: flex;
     flex-direction: column;
     align-items: center;
     margin-right: 100px;
+    margin-top: 1rem;
 }
 
 .diferenciales-title{
@@ -206,6 +207,8 @@
     text-align: start;
     width: 90%;
     padding: 10px 0;
+    font-size: 20px;
+    margin: 1rem 0 1rem 0;
 }
 
 /*  end diferenciales item  */

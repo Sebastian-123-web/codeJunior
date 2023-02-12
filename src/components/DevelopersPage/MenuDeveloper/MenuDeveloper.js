@@ -18,7 +18,8 @@ const MenuDeveloper = () => {
 
     const activeStyle = {
         borderLeft: "3px solid #000",
-        filter: "invert(67%) sepia(94%) saturate(1626%) hue-rotate(243deg) brightness(101%) contrast(104%)"
+        filter: "invert(67%) sepia(94%) saturate(1626%) hue-rotate(243deg) brightness(101%) contrast(104%)",
+        // fontWeight: ""
     }
 
     return (

@@ -12,7 +12,9 @@
   height: 70%;
   width: 50%;
   border-radius: 30px;
-  border: #000000 solid 2px;
+  box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.75);
+  -webkit-box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.75);
 }
 .left_Emp {
   height: 90%;
@@ -73,7 +75,7 @@
   border-radius: 15px;
 }
 
-@media screen and (max-width:760px) {
+@media screen and (max-width: 760px) {
   .form-content {
     width: 100%;
   }
