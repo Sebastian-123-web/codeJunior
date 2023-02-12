@@ -42,9 +42,7 @@ const Propuesta = (props) => {
             }
             <div className={`modal-business ${modal && 'activebusiness'}`}>
                 <section className={`modal-business-background ${modal && 'activemodalbusiness'}`} onClick={()=>setModal(!modal)}></section>
-                {/* <section className={`modal-section ${modal && 'activemodalbusiness'}`}> */}
-                    <Modal />
-                {/* </section> */}
+                <Modal />
             </div>
         </div>
     )
