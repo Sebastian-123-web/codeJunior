@@ -5,6 +5,9 @@ import PerfilMainCompany from '../../../components/CompanyPage/Perfil/PerfilMain
 import PerfilSocialCompany from '../../../components/CompanyPage/Perfil/PerfilSocialCompany/PerfilSocialCompany'
 
 export default function PerfilCompany() {
+
+
+  
   return (
     <div className='company'>
 
