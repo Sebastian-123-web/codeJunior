@@ -1,5 +1,4 @@
 import './Modal.css';
-import Perfil from '../../../pages/Business/Perfil/Perfil';
 
 const Modal = () => {
     return (

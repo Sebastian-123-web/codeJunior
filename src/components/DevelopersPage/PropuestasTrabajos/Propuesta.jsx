@@ -1,5 +1,5 @@
 import { useEffect, useState } from "react";
-import Modal from "./Modal";
+import Modal from "../Modal/Modal";
 import './Propuesta.css'
 
 const Propuesta = (props) => {
@@ -42,9 +42,7 @@ const Propuesta = (props) => {
             }
             <div className={`modal-business ${modal && 'activebusiness'}`}>
                 <section className={`modal-business-background ${modal && 'activemodalbusiness'}`} onClick={()=>setModal(!modal)}></section>
-                {/* <section className={`modal-section ${modal && 'activemodalbusiness'}`}> */}
-                    <Modal />
-                {/* </section> */}
+                <Modal />
             </div>
         </div>
     )
