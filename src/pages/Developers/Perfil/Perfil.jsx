@@ -18,6 +18,8 @@ const Perfildeveloper = () => {
     const [edu, setEdu] = useState([]);
     const [sob, setSob] = useState([]);
 
+    
+
     const fetchDev = async(developer) => {
         console.log(dv)
         const dataDev = await DataDevCom(dv, developer);

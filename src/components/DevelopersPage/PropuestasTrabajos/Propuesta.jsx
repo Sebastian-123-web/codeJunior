@@ -1,5 +1,5 @@
 import { useEffect, useState } from "react";
-import Modal from "./Modal";
+import Modal from "../Modal/Modal";
 import './Propuesta.css'
 
 const Propuesta = (props) => {
