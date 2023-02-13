@@ -21,7 +21,7 @@
     font-family: 'Poppins', sans-serif;
     font-size: 14px;
     box-sizing: border-box;
-    margin-bottom: 30px;
+    margin-bottom: 100px;
 }
 .banner{
     margin-bottom: 40px;
@@ -120,5 +120,14 @@
     .search_job{
         margin-right: 15px;
         margin-left: 15px;
+    }
+    .banner{
+        flex-direction: column;
+    }
+    .banner-50{
+        width: 100%;
+    }
+    .search_job_-input{
+        width: 90%;
     }
 }
