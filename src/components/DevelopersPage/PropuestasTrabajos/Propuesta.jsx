@@ -26,13 +26,13 @@ const Propuesta = (props) => {
                             </div>
                             <div className="job_descr">
                                 <p className="p-descr">{b.nombre_empresa} </p>
-                                <h2 className='h2-cargo'>{b.cargo_buscado} | {b.nivel_dev}</h2>
-                                <p className="p-descr"><ion-icon name="wifi"></ion-icon> {b.tipo_trabajo} | {b.tiempo_trabajo} | {b.sueldo_trabajo}</p>
+                                <h2 className='h2-cargo'>{b.puestos_trabajos[0].cargo_buscado} | {b.puestos_trabajos[0].nivel_dev}</h2>
+                                <p className="p-descr"><ion-icon name="wifi"></ion-icon> {b.puestos_trabajos[0].tipo_trabajo} | {b.puestos_trabajos[0].tiempo_trabajo} | {b.puestos_trabajos[0].sueldo_trabajo}</p>
                             </div>
                         </div>
                         <div className="job_tec">
                             {
-                                b.tecnologias.length && b.tecnologias.map((t)=>(
+                                b.puestos_trabajos[0].tecnologias.length && b.puestos_trabajos[0].tecnologias.map((t)=>(
                                     <img src={t.icon} alt="" width={20} height={20} />
                                 ))
                             }
