@@ -1,0 +1,43 @@
+.jobs-company {
+  margin-top: 1rem;
+  position: relative;
+}
+
+.jobs-section-button {
+  display: inline-block;
+  position: relative;
+  left: 88%;
+  margin: 1rem;
+}
+
+.jobs-section-button > button {
+  border: none;
+  border-radius: 15px;
+  width: 4rem;
+  background: #f97300;
+  color: #fff;
+  cursor: pointer;
+}
+
+.jobs-cards-section {
+  background: #ecf1f4;
+  border-radius: 12px;
+  display: flex;
+  flex-direction: column;
+  padding: 1rem;
+}
+
+.control-job {
+  border-radius: 15px !important;
+  width: 90%;
+  margin: 0 auto;
+  background: #fff !important;
+  cursor: pointer;
+  transition: all 0.4s;
+}
+
+.control-job:hover {
+  box-shadow: 0px 1px 3px 0px rgba(0, 0, 0, 0.75);
+  -webkit-box-shadow: 0px 1px 3px 0px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: 0px 1px 3px 0px rgba(0, 0, 0, 0.75);
+}

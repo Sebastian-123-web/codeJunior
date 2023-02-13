@@ -4,7 +4,7 @@ import { FooterHome } from '../../components/Home/FooterHome/FooterHome';
 import { Outlet } from 'react-router-dom';
 import './Home.css'
 
-function Home() {
+const Home = () => {
   return (
     <div className="HomePage">
       <section className='headerHome'>

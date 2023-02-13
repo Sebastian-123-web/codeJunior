@@ -2,8 +2,8 @@
     min-width: 20rem;
     min-height: 13rem;
     border-radius: 12px;
-    background-color: #F8F5E4;
     margin-right: 1rem;
+    background: #ecf1f4;
     display: flex;
     justify-content: center;
 }

@@ -4,12 +4,19 @@
     min-height: 10rem;
     height: 10rem;
     border-radius: 12px;
-    margin-left: 1rem;
-    background: #F8F5E4;
+    background: #ecf1f4;
+    display: flex;
+    flex-direction: column;
 }
 
 .main-company_description {
+    padding: 1rem;
+    flex-grow: 1;
     word-wrap: break-word;
+}
+
+.main-company_description > h1 {
+    margin: 0;
 }
 
 @media screen and (max-width: 760px) {
