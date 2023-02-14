@@ -20,20 +20,33 @@ const LoginHome = () => {
     }
 
     const fetchDev = async() =>{
-        console.log(form.credencial);
         const data = await DataComDev(form.credencial);
         setDev(data)
-        console.log(data)
     }
+
 
     const handleSubmit  = (e)  => {
         e.preventDefault();
 
-        const correo = dev.some((c)=>(c.correo === form.fuser));
-        const password = dev.some((c)=>(c.password === form.fpassword));
+        if(dev=="Not found"){
+            return Swal.fire({
+                title : "Falta Seleccionar el tipo de Entidad",
+                text: "Desarrollador o Empresa",
+                icon:"warning",
+            });
+        }
+
+        const developer = dev.find((c)=>(c.correo === form.fuser));
+        if(developer === undefined){
+            return Swal.fire({
+                title : "Correo y/o contraseña Erróneas",
+                icon:"error",
+            });
+        }
+        const password = developer.password === form.fpassword ? true : false;
         const email = form.fuser
 
-        if(correo && password){
+        if(password == true){
             navigate(`/${form.credencial}/${form.fuser}`, {
               replace:true,
               state: {
@@ -72,7 +85,7 @@ const LoginHome = () => {
                         <p>Elige si eres empresa o desarrollador</p>
                     <div className="container__inputs">
                         <select name="credencial" onChange={handleChange} defaultValue="" className="container-select">
-                            <option value="">---</option>
+                            <option value="error">---</option>
                             <option value="business">Empresa</option>
                             <option value="developers">Desarrollador</option>
                         </select>
