@@ -7,6 +7,7 @@ import Educacion from '../../../components/DevelopersPage/perfil/Educacion'
 import SobreMi from '../../../components/DevelopersPage/perfil/SobreMi'
 import InformacionDev from '../../../components/DevelopersPage/perfil/InformacionDev'
 import { useParams } from 'react-router-dom'
+import developer_perfil from '../../../assets/Developer/developer_perfil.svg'
 
 const Perfildeveloper = () => {
 
@@ -38,6 +39,8 @@ const Perfildeveloper = () => {
     return (
         <div className="container">
             <div className="header-dev">
+                <h2 className='banner-h2'>Personaliza tu perfil con todas las habilidades tienes para mostrar</h2>
+                <img src={developer_perfil} alt="" width={150} />
                 <img src={dev.foto_perfil} alt="" className="photo-perfil" width={100} />
             </div>
             <div className="data-dev">
