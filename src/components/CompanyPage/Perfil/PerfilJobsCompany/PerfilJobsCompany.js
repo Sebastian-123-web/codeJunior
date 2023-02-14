@@ -16,7 +16,8 @@ const PerfilJobsCompany = (props) => {
     return (
     <section className='jobs-company'>
         <div className='jobs-section-button'>
-          <button>job +</button>
+          <h1 className='title-section-company'>Vacantes:</h1>
+          <button><h2>+</h2></button>
         </div>
         <section className='jobs-section'>
             <div className='jobs-cards-section'>

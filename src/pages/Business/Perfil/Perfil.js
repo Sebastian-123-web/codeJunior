@@ -35,7 +35,7 @@ export default function PerfilCompany() {
               <PerfilMainCompany descripcionEmpresa={dataEmp.biografia}  />
             </section>
 
-            <section>
+            <section className='jobs-company-section'>
               <PerfilJobsCompany puestosEmpresa={dataEmp.puestos_trabajos} nombreEmpresa={dataEmp.nombre_empresa} logoEmpresa={dataEmp.logo_empresa} />
             </section>
           </div>
