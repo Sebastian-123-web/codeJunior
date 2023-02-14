@@ -259,6 +259,7 @@
 .testimonials .cards{
     width: 500px;
     height: 600px;
+    min-height: 300px;
     border-radius: 60px;
     display: flex;
     flex-direction: column;
@@ -337,6 +338,10 @@
     .card-carrousels {
         width: 90%;
         margin: 0 auto;
+        font-size: 14px;
+    }
+    .testimonials .cards{
+        min-height: 300px !important;
     }
     .home-contacto {
         max-width: 100%;
@@ -353,9 +358,11 @@
     }
     .map-container {
         max-width: 100%;
+        
     }
     .iframe-map {
         max-width: 100%;
+        min-height: 300px;
     }
     .content-left,
     .content-rigth {

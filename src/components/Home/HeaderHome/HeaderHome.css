@@ -75,11 +75,6 @@
     border-radius: 8px;
 }
 
-.target:hover{
-    background-color: #FFB0FF;
-    color: #9D27BA;
-}
-
 .target-btn{
     text-decoration: none;
     cursor: pointer;

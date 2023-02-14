@@ -2,15 +2,12 @@ import React from "react";
 import perfil1 from '../../../assets/Home/assetsHome/perfil-1.jpg';
 import perfil2 from '../../../assets/Home/assetsHome/perfil-22.jpg';
 import perfil3 from '../../../assets/Home/assetsHome/perfil-3.jpg';
-import desarrollador from '../../../assets/Home/assetsHome/desarrollador.svg';
-import empresa from '../../../assets/Home/assetsHome/empresa.svg';
 import { Link } from "react-router-dom";
 import { styled } from '@mui/material/styles';
 import Box from '@mui/material/Box';
 import ButtonBase from '@mui/material/ButtonBase';
 import Typography from '@mui/material/Typography';
 import Carousel from 'react-material-ui-carousel'
-import { Paper } from '@mui/material'
 import './MainHome.css'
 
 const images = [
@@ -239,38 +236,6 @@ const MainHome = () => {
                                         </div>
                             </div>
                             </Carousel>
-
-
-
-                                    {/*<div className="card-carrousels" id="card-carrousel-1">
-                                        <div className="cards" id="card-1">
-                                            <p className="card-star">★★★★★</p>
-                                            <img className="cards-img" src={perfil1} alt="perfil 1" />
-                                            <p className="card-text-1">Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur, est.</p>
-                                            <p className="card-user">user-1</p>
-                                            <p className="card-text">CEO empresa 1</p>
-                                        </div>
-                                    </div>
-
-                                    <div className="card-carrousels" id="card-carrousel-2">
-                                        <div className="cards" id="card-2">
-                                            <p className="card-star">★★★★★</p>
-                                            <img className="cards-img" src={perfil2} alt="perfil 2" />
-                                            <p className="card-text-1">Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur, est.</p>
-                                            <p className="card-user">user-2</p>
-                                            <p className="card-text">CTO empresa 2</p>
-                                        </div>
-                                    </div>
-                                
-                                    <div className="card-carrousels" id="card-carrousel-3">
-                                        <div className="cards" id="card-3">
-                                            <p className="card-star">★★★★★</p>
-                                            <img className="cards-img" src={perfil3} alt="perfil 3" />
-                                            <p className="card-text-1">Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur, est.</p>
-                                            <p className="card-user">user-3</p>
-                                            <p className="card-text">CEO y fundador empresa 3</p>
-                                        </div>
-                                     </div>   */}
                         
                     </div>
                   </div>
@@ -280,11 +245,11 @@ const MainHome = () => {
                     <div className="contact-wrapper">
                         
                         <div className="map-container">
-                            <iframe className="iframe-map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d63390.89404368884!2d-79.86765562304934!3d-6.778267495100513!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x904cef2c56f229ad%3A0x9ef53152a0c6b9d!2sReal%20Plaza%20Chiclayo.!5e0!3m2!1ses!2spe!4v1676073447675!5m2!1ses!2spe" width="700" height="450"  allowFullScreen="" loading="lazy" referrerPolicy="no-referrer-when-downgrade"></iframe>
+                            <iframe className="iframe-map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d63390.89404368884!2d-79.86765562304934!3d-6.778267495100513!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x904cef2c56f229ad%3A0x9ef53152a0c6b9d!2sReal%20Plaza%20Chiclayo.!5e0!3m2!1ses!2spe!4v1676073447675!5m2!1ses!2spe" width="700" height="400" allowFullScreen="" loading="lazy" referrerPolicy="no-referrer-when-downgrade"></iframe>
                         </div>
 
                         <div className="contact-container">
-                              <p><strong>Direccion:</strong> Cale Algun Lugar XYZ, Chiclayo</p>
+                              <p><strong>Direccion:</strong> CalLe Algun Lugar XYZ, Chiclayo</p>
                               <p><strong>Telefono:</strong> 01 - 555 4444</p>
                               <p><strong>email: </strong> contacto@devjuniors.com</p>
                         </div>
