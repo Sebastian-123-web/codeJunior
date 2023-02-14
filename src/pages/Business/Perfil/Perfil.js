@@ -16,7 +16,7 @@ export default function PerfilCompany() {
   const fetchDataEmp = async(data) => {
     const response = await DataDevCom(mn, data)
     setDataEmp(response[0]);
-    // console.log(response[0].puestos_trabajos)
+    console.log(response[0].redes)
   }
 
   useEffect(() => {
@@ -42,7 +42,7 @@ export default function PerfilCompany() {
 
           <div className='section-company_right'>
             <section className='perfil-social-company'>
-              <PerfilSocialCompany />
+              <PerfilSocialCompany redesEmpresa={dataEmp.redes} sectorEmpresa={dataEmp.sector} departamentoEmpresa={dataEmp.departamento}/>
             </section>
           </div>
 
