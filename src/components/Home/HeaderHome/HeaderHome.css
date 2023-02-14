@@ -6,6 +6,7 @@
     height: 70px;
     background-color: #0E3047;
     font-family: 'Poppins', sans-serif;
+    position: relative;
 }
 
 .app-header{
@@ -22,6 +23,20 @@
 
 .menu-icon-home{
     color: #fff;
+}
+
+.menu-navbar-item{
+    text-decoration: none;
+    color: #9D27BA;
+}
+
+.logo-link {
+    text-decoration: none;
+    width: 10px !important;
+}
+
+.logo-box-header {
+    width: 4rem;
 }
 
 .logo{
@@ -62,7 +77,7 @@
 
 .target:hover{
     background-color: #FFB0FF;
-    color: #9D27BA
+    color: #9D27BA;
 }
 
 .target-btn{
@@ -75,7 +90,6 @@
     border: 1px solid #FFB0FF;
     font-size: 18px;
     font-weight: bolder;
-    width: 68px;
     height: 40px;
     padding: 8px 12px;
     border-radius: 20px;
@@ -83,9 +97,25 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    cursor: pointer;
+    transition: all .3s;
 }
 
 .btn-navigator:hover{
     border: 1px solid #FFF;
     color: #fff;
+}
+
+@media screen and (max-width:760px) {
+    .login-header-menu {
+        display: block !important;
+    }
+    .target-btn {
+        display: none;
+    }
+    .logo-center-header {
+        position: absolute;
+        transform: translate(-50%,-50%);
+        left: 50%;
+    }
 }

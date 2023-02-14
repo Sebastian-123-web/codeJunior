@@ -20,8 +20,10 @@ const LoginHome = () => {
     }
 
     const fetchDev = async() =>{
-        const data = await DataComDev('developers');
+        console.log(form.credencial);
+        const data = await DataComDev(form.credencial);
         setDev(data)
+        console.log(data)
     }
 
     const handleSubmit  = (e)  => {
@@ -32,7 +34,7 @@ const LoginHome = () => {
         const email = form.fuser
 
         if(correo && password){
-            navigate(`/company/${form.fuser}`, {
+            navigate(`/${form.credencial}/${form.fuser}`, {
               replace:true,
               state: {
                 logged: true,
@@ -41,50 +43,47 @@ const LoginHome = () => {
             })
         }else{
             Swal.fire({
-                title : "Correo y/o contraseña Erronas",
+                title : "Correo y/o contraseña Erróneas",
                 icon:"error",
             });
         }
-
     }
 
     useEffect(()=>{
         fetchDev()
-    },[])
+    },[form.credencial])
 
     return(
         <div className="container-login">
-            <div className="container-right">
-                
+            <div className="container-left">
                 <div className="image-lgn-container">
                     <img src={image}  alt="trabajo remoto" />
                 </div>
             </div>
-            <div className="container-left">
+            <div className="container-right">
+                <section className="form-contain">
                 <div className="text-container">
-                    <h2 className="logo logoform">Dev<span className="logo-extend">Juniors</span></h2>
-                    <p>Descubre todas las oportunidades laborales y candidatos disponibles para ti ingresando  a nuestra plataforma, puedes ingresar como desarrollador o como empresa dependiendo del perfil</p>
+                    <span>
+                        Bienvenidos a
+                    <h2 className="logo logoform">Dev<span className="logo-extend logo-formjr">Juniors!</span></h2>
+                    </span>
                 </div>
-                <p>Bienvenido a DevJuniors, eres nuevo registrate <Link className="here" to="/">aqui</Link> o vuelve al <Link className="home" to="/">inicio</Link></p>
                 <form className="container__form" action="/" onSubmit={handleSubmit}>
-                    <div className="container__inputs">
                         <p>Elige si eres empresa o desarrollador</p>
+                    <div className="container__inputs">
                         <select name="credencial" onChange={handleChange} defaultValue="" className="container-select">
-                            <option value="">-----------------------------</option>
-                            <option value="empresa">Empresa</option>
-                            <option value="desarrollador">Desarrollador</option>
+                            <option value="">---</option>
+                            <option value="business">Empresa</option>
+                            <option value="developers">Desarrollador</option>
                         </select>
-                        <label htmlFor="fuser" className="user__label--1">
-                            <input type="text" id="fuser" name="fuser"  className="user" placeholder="Ingresa tu usuario" value={form.fuser} onChange={handleChange} autoComplete="name" required />
-                        </label>
-                        <label htmlFor="fpassword" className="password__label--2">
-                            <input type="password" id="fpassword" name="fpassword" className="pswd" placeholder="Ingresa tu password" value={form.fpassword} onChange={handleChange} autoComplete="on" required />
-                        </label>
+                            <input type="text" id="fuser" name="fuser"  className="user ipts-lg" placeholder="Usuario" value={form.fuser} onChange={handleChange} autoComplete="name" required />
+                            <input type="password" id="fpassword" name="fpassword" className="pswd ipts-lg" placeholder="Contraseña" value={form.fpassword} onChange={handleChange} autoComplete="on" required />
                     </div>
                     <div className="container__btn">
                         <button className="btn--submit">Login</button>
                     </div>
                 </form>
+                </section>
             </div>
         </div>
     )

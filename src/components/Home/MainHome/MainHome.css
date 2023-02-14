@@ -98,6 +98,7 @@
     align-items: center;
     justify-content: center;
     flex-direction: column;
+    text-align: center;
 }
 
 
@@ -108,6 +109,7 @@
     padding: 15px 0;
     color: #9D27BA;
     font-weight: bolder;
+    text-transform: uppercase;
 }
 
 .content-title-1{
@@ -124,19 +126,92 @@
     height: 200px;
     font-size: 20px;
     color: #FFF;
-    font-weight: bolder;
+    /* font-weight: bolder; */
+    font-weight: 500;
+    font-style: italic;
+    color: #eee;
+}
+
+.home-about-us{
+    width: 100%;
+    height: auto;
+    margin: 40px 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.about-title{
+    font-size: 36px;
+    text-align: center;
+    line-height: 1.2;
+    color: #9D27BA;
+}
+
+.about-text{
+    font-size: 18px;
+    line-height: 1.2;
+    text-align: start;
+    width: 80%;
+    padding: 10px 0;
 }
 
 .testimonials{
-    width: 100%;
+    width: 80%;
     height: auto;
     padding-top: 30px;
     padding-bottom: 60px;
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
+    justify-content: space-between;
     align-items: center;
+    margin: 0 auto;
     background-color: #FFF;
 }
+
+/*  diferenciales content   */
+
+.home-diferenciales{
+    width:40%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-right: 100px;
+    margin-top: 1rem;
+}
+
+.diferenciales-title{
+    font-size: 36px;
+    text-align: center;
+    line-height: 1.2;
+    color: #9D27BA;
+    margin-bottom: 20px;
+}
+
+.home-list-1{
+    width: 80%;
+    height: auto;
+    /*display: flex;
+    align-items: center;
+    justify-content: space-around;*/
+}
+
+.diferenciales-list{
+    text-align: start;
+}
+
+.diferenciales-item{
+    font-size: 18px;
+    line-height: 1.2;
+    text-align: start;
+    width: 90%;
+    padding: 10px 0;
+    font-size: 20px;
+    margin: 1rem 0 1rem 0;
+}
+
+/*  end diferenciales item  */
 
 .testimonials h2{
     color: #9D27BA;
@@ -210,4 +285,98 @@
 
 .card-text-1{
     width: 70%;
+}
+
+.home-contacto{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+.home-contacto h2{
+    text-align: center;
+    font-size: 36px;
+    color: #9D27BA;
+    margin-bottom: 20px;
+}
+
+.contact-container p{
+    text-align: start;
+    font-size: 18px;
+    line-height: 1.2;
+    padding: 10px 0;
+}
+
+.contact-wrapper{
+    width: 80%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.login-header-menu {
+    display: none;
+}
+
+@media screen and (max-width:760px) {
+    .testimonials {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+    }
+    .testimonials-home-container {
+        max-width: 100%;
+    }
+    
+    .card-containers {
+        width: 100%;
+    }
+
+    .card-carrousels {
+        width: 90%;
+        margin: 0 auto;
+    }
+    .home-contacto {
+        max-width: 100%;
+        display: flex;
+        flex-direction: column;
+    }
+    .about-text {
+        text-align: center !important;
+    }
+    .contact-wrapper {
+        max-width: 100%;
+        display: flex;
+        flex-direction: column;
+    }
+    .map-container {
+        max-width: 100%;
+    }
+    .iframe-map {
+        max-width: 100%;
+    }
+    .content-left,
+    .content-rigth {
+        text-align: center;
+        width: 100%;
+        height: auto;
+        padding: 1rem 0 1rem 0;
+    }
+    .content-text {
+        /* font-size: 15px; */
+        letter-spacing: .2px;
+        line-height: 1.1;
+        width: 90%;
+        height: auto;
+    }
+    .content-title {
+        padding-top: 0;
+    }
+    .home-diferenciales {
+        margin: 0;
+        width: 100%;
+    }
+    
 }

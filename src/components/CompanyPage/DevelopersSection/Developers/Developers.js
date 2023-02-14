@@ -8,7 +8,7 @@ import PerfildeveloperCompany from '../../Developers/Perfil/PerfilDeveloperCompa
 export default function Developers() {
   const [ data, setData ] = useState([]);
   const [ modal, setModal ] = useState(false);
-  const [ userId, setUserId ]= useState("")
+  const [ userEmail, setUserEmail ]= useState("")
 
   const DataDevCom = async () => {
     const response = await DataComDev("developers");
@@ -22,14 +22,14 @@ export default function Developers() {
 
 
   return (
-    <section className='company-developers'>
+    <section className={`company-developers ${modal && 'activecompany-developers'}`}>
       <SearchDevelopers/>
       <section className='company-dev-users'>
         <section className='company-dev-users_box'>
           {data.length > 0 && data.map((event) => (
             <div className='company-dev-users__cards' onClick={() => {
               setModal(!modal);
-              setUserId(event.id);
+              setUserEmail(event.correo);
             }}>
 
               <div className='users-cards-header'>
@@ -59,7 +59,7 @@ export default function Developers() {
       <section className={`company-dev-users-modal ${modal && 'activeCompany-dev-users-modal'}`} >
         <div className={`background-modal ${modal && 'activeBackground-modal'}`} onClick={() => setModal(!modal)}></div>
         <section className={`dev-users_modal ${modal && 'activeDev-users_modal'}`}>
-          <PerfildeveloperCompany id={userId}/>
+          <PerfildeveloperCompany email={userEmail}/>
         </section>
       </section>
     </section>

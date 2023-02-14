@@ -1,3 +1,4 @@
+import zIndex from "@mui/material/styles/zIndex";
 import { useEffect, useState } from "react";
 
 const Educacion = (props) => {

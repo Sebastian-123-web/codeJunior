@@ -16,7 +16,9 @@ const MenuEnterprise = () => {
     }
 
     const activeStyle = {
-        borderLeft: "3px solid #f6f6f6",
+        borderLeft: "3px solid #000",
+        filter: "invert(67%) sepia(94%) saturate(1626%) hue-rotate(243deg) brightness(101%) contrast(104%)"
+        
     }
 
     return (
@@ -30,10 +32,10 @@ const MenuEnterprise = () => {
                 </div>
                 <nav className={`nav ${menu && 'active_menu'}`}>
                         <ul className='list'>
-                            <li><NavLink className='links' style={({ isActive }) => isActive ? activeStyle : undefined} to={`/company/${mn}`} end><img className='icon-enterprise' src={user} alt=''/> <div className='link-name'>Perfil</div></NavLink></li>
-                            <li><NavLink className='links' style={({ isActive }) => isActive ? activeStyle : undefined} to={`/company/${mn}/developers`}><img className='icon-enterprise' src={developer} alt=''/> <div className='link-name'>Desarrolladores</div></NavLink></li>
-                            <li><NavLink className='links' style={({ isActive }) => isActive ? activeStyle : undefined} to={`/company/${mn}/notifications`}><img className='icon-enterprise' src={notification} alt=''/> <div className='link-name'>Notificaciones</div></NavLink></li>
-                            <li><NavLink className='links' style={({ isActive }) => isActive ? activeStyle : undefined} to={`/company/${mn}/logout`}><img className='icon-enterprise' style={{marginLeft: "1.2em"}} src={logout} alt=''/> <div className='link-name'>Logout</div></NavLink></li>
+                            <li><NavLink onClick={() => menu === false ? "" : setMenu(!menu)} className='links' style={({ isActive }) => isActive ? activeStyle : undefined} to={`/business/${mn}`} end><img className='icon-enterprise' src={user} alt=''/> <div className='link-name'>Perfil</div></NavLink></li>
+                            <li><NavLink onClick={() => menu === false ? "" : setMenu(!menu)} className='links' style={({ isActive }) => isActive ? activeStyle : undefined} to={`/business/${mn}/developers`}><img className='icon-enterprise' src={developer} alt=''/> <div className='link-name'>Desarrolladores</div></NavLink></li>
+                            <li><NavLink onClick={() => menu === false ? "" : setMenu(!menu)} className='links' style={({ isActive }) => isActive ? activeStyle : undefined} to={`/business/${mn}/notifications`}><img className='icon-enterprise' src={notification} alt=''/> <div className='link-name'>Notificaciones</div></NavLink></li>
+                            <li><NavLink onClick={() => menu === false ? "" : setMenu(!menu)} className='links' style={({ isActive }) => isActive ? activeStyle : undefined} to={`/business/${mn}/logout`}><img className='icon-enterprise' style={{marginLeft: "1.2em"}} src={logout} alt=''/> <div className='link-name'>Logout</div></NavLink></li>
                         </ul>
                 </nav>
                 </section>
