@@ -1,14 +1,8 @@
 import React, { useState } from "react";
 import "./EmpForm.css";
-<<<<<<< HEAD
-import Empresa from "../../../assets/Home/assetsHome/empresa.svg";
 
-=======
-// import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-// import { faEye} from "@fortawesome/free-solid-svg-icons";
 import show from '../../../assets/FormIcons/show.png'
 import hide from '../../../assets/FormIcons/hide.png'
->>>>>>> main
 
 export default function EmpForm() {
  const [formData, setFormData] = useState({
@@ -168,19 +162,11 @@ const [showPassword, setShowPassword] = useState(false);
                   onChange={handleChange}
                 />
                 <button
-<<<<<<< HEAD
-                className="boton_ojo"
-                  type="button"
-                  onClick={() => setShowPassword(!showPassword)}
-                >
-                  {showPassword ? "Ocultar" : "Mostrar"} 
-=======
                   className="show-password"
                   type="button"
                   onClick={() => setShowPassword(!showPassword)}
                 >
                     <img className='hide-password-form' src={showPassword ? hide : show} alt='showPasswordIcon'/>
->>>>>>> main
                 </button>
               </div>
               <div className="a_Emp">
@@ -222,12 +208,6 @@ const [showPassword, setShowPassword] = useState(false);
             </div>
           </form>
         </section>
-<<<<<<< HEAD
-        <img src={Empresa} alt="" />
-      </main>
-    </>
-=======
     </section>
->>>>>>> main
   );
 }

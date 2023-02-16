@@ -1,12 +1,7 @@
 import React, {  useState } from 'react'
 import "./DevForm.css";
-<<<<<<< HEAD
-import Desarrollador from "../../../assets/Home/assetsHome/desarrollador.svg";
-
-=======
 import show from '../../../assets/FormIcons/show.png'
 import hide from '../../../assets/FormIcons/hide.png'
->>>>>>> main
 
 export default function DevForm() {
  const [formData, setFormData] = useState({
@@ -128,58 +123,6 @@ const [showPassword, setShowPassword] = useState(false);
                   </button>
                 </div>
               </div>
-<<<<<<< HEAD
-            </div>
-            <div className="right">
-              <div className="a">
-                <input
-                  placeholder="Apellidos"
-                  required
-                  type="text"
-                  id="apellidos"
-                  name="surname"
-                  value={formData.surname}
-                  onChange={handleChange}
-                />
-              </div>
-              <div className="a">
-                <input
-                  placeholder="Celular"
-                  required
-                  type="number"
-                  id="numerocel"
-                  name="phone"
-                  value={formData.phone}
-                  onChange={handleChange}
-                />
-              </div>
-              <div className="a">
-                <input
-                  placeholder="Password"
-                  required
-                  type={showPassword ? "text" : "password"}
-                  id="password-input"
-                  name="password"
-                  value={formData.password}
-                  onChange={handleChange}
-                />
-                <button
-                  type="button"
-                  onClick={() => setShowPassword(!showPassword)}
-                >
-                  {showPassword ? "Ocultar" : "Mostrar"}
-                </button>
-              </div>
-            </div>
-            <div className="boton ">
-              <button type="submit">Registrarse</button>
-            </div>
-          </form>
-        </section>
-<img src= {Desarrollador} alt="" />
-      </main>
-    </>
-=======
             </section>
             <div className="boton btn-dev-reg">
               <button type="submit">Registrarse</button>
@@ -187,6 +130,5 @@ const [showPassword, setShowPassword] = useState(false);
           </form>
       </section>
     </section>
->>>>>>> main
   );
 }
