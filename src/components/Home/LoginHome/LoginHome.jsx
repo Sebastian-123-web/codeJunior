@@ -2,7 +2,7 @@ import React, { useEffect } from "react";
 import { useState } from "react";
 import image from '../../../assets/Home/assetsHome/undraw-login.svg';
 import './LoginHome.css'
-import { Link, useNavigate } from "react-router-dom";
+import { useNavigate } from "react-router-dom";
 import Swal from "sweetalert2";
 import {DataComDev} from '../../../services/Company/DataComDevs'
 
@@ -46,7 +46,7 @@ const LoginHome = () => {
         const password = developer.password === form.fpassword ? true : false;
         const email = form.fuser
 
-        if(password == true){
+        if(password === true){
             navigate(`/${form.credencial}/${form.fuser}`, {
               replace:true,
               state: {

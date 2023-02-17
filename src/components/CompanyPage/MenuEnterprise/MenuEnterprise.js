@@ -1,11 +1,10 @@
 import { NavLink, Outlet, useParams } from 'react-router-dom'
-import { useEffect, useState } from 'react'
+import { useState } from 'react'
 import '../MenuEnterprise/MenuEnterprise.css'
-
 import developer from '../../../assets/MenuEnterpriseIcons/developer.png'
-import logout from '../../../assets/MenuEnterpriseIcons/logout.png'
 import notification from '../../../assets/MenuEnterpriseIcons/notification.png'
 import user from '../../../assets/MenuEnterpriseIcons/user.png'
+import LogoutSession from '../../General/Logout/LogoutSession'
 
 const MenuEnterprise = () => {
     const [ menu, setMenu ] = useState(false)
@@ -35,7 +34,7 @@ const MenuEnterprise = () => {
                             <li><NavLink onClick={() => menu === false ? "" : setMenu(!menu)} className='links' style={({ isActive }) => isActive ? activeStyle : undefined} to={`/business/${mn}`} end><img className='icon-enterprise' src={user} alt=''/> <div className='link-name'>Perfil</div></NavLink></li>
                             <li><NavLink onClick={() => menu === false ? "" : setMenu(!menu)} className='links' style={({ isActive }) => isActive ? activeStyle : undefined} to={`/business/${mn}/developers`}><img className='icon-enterprise' src={developer} alt=''/> <div className='link-name'>Desarrolladores</div></NavLink></li>
                             <li><NavLink onClick={() => menu === false ? "" : setMenu(!menu)} className='links' style={({ isActive }) => isActive ? activeStyle : undefined} to={`/business/${mn}/notifications`}><img className='icon-enterprise' src={notification} alt=''/> <div className='link-name'>Notificaciones</div></NavLink></li>
-                            <li><NavLink onClick={() => menu === false ? "" : setMenu(!menu)} className='links' style={({ isActive }) => isActive ? activeStyle : undefined} to={`/business/${mn}/logout`}><img className='icon-enterprise' style={{marginLeft: "1.2em"}} src={logout} alt=''/> <div className='link-name'>Logout</div></NavLink></li>
+                            <li><LogoutSession/></li>
                         </ul>
                 </nav>
                 </section>

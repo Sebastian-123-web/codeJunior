@@ -150,6 +150,16 @@
   }
 
   
+/* 
+  BUTTONS
+*/
+
+.confirmButton {
+   background: #28A745;
+}
+
+
+
 @media screen and (max-width:760px) {
   .rola {
     flex-direction: column;

@@ -8,7 +8,6 @@ import { useParams } from 'react-router-dom'
 import PerfilJobsCompany from '../../../components/CompanyPage/Perfil/PerfilJobsCompany/PerfilJobsCompany'
 
 export default function PerfilCompany() {
-
   const { mn } = useParams();
 
   const [ dataEmp, setDataEmp ] = useState([]);
@@ -16,7 +15,6 @@ export default function PerfilCompany() {
   const fetchDataEmp = async(data) => {
     const response = await DataDevCom(mn, data)
     setDataEmp(response[0]);
-    console.log(response[0].redes)
   }
 
   useEffect(() => {
