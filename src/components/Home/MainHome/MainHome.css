@@ -450,6 +450,132 @@
     margin-bottom: 20px;
 }
 
+.contact-wrapper{
+    width: 90%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.contact-text-container{
+    width: 30%;
+    padding: 20px;
+    display: flex;
+}
+
+.contact__form{
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.contact__inputs--1{
+    width: 100%;
+    height: 15%;
+    display: flex;
+    justify-content: space-between;
+    margin: 10px 0 10px 0;
+}
+
+.contact__label--1{
+    width: 46%;
+    height: 100%;
+}
+
+.contact-name{
+    width: 80%;
+    height: auto;
+    padding: 4px 0 18px 2px;
+    border: none;
+    border-bottom: 2px solid #9D27BA;
+    outline: none;
+}
+
+.contact__label--2{
+    width: 46%;
+    height: 100%;
+}
+
+.contact__label--3{
+    width: 46%;
+    height: 100%;
+}
+
+.contact__label--4{
+    width: 46%;
+    height: 100%;
+}
+
+.contact-email{
+    width: 100%;
+    height: auto;
+    padding: 4px 0 18px 2px;
+    border: none;
+    border-bottom: 2px solid #9D27BA;
+    outline: none;
+}
+
+.contact__inputs--2{
+    width: 100%;
+    height: 15%;
+    display: flex;
+    justify-content: space-between;
+    margin: 10px 0 10px 0;
+}
+
+.contact-business{
+    width: 90%;
+    height: auto;
+    padding: 4px 0 18px 2px;
+    border: none;
+    border-bottom: 2px solid #9D27BA;
+    outline: none;
+}
+
+
+
+.contact-telephone{
+    width: 85%;
+    height: auto;
+    padding: 4px 0 18px 2px;
+    border: none;
+    border-bottom: 2px solid #9D27BA;
+    outline: none;
+}
+
+.text-area{
+    width: 100%;
+    height: 30%;
+    border: none;
+    border-bottom: 2px solid #9D27BA;
+    margin-top: 10px;
+    margin-bottom: 20px;
+    outline: none;
+}
+
+.contact__btn--container{
+    margin: 15px 0;
+}
+
+.contact__btn--submit{
+    width: 100px;
+    height: auto;
+    padding: 8px 15px;
+    border: none;
+    border: 3px solid #9D27BA;
+    background-color: #fff;
+    border-radius: 8px;
+    color: #9D27BA;
+}
+
+.contact__btn--submit:hover{
+    cursor: pointer;
+    transform: scale(1.2);
+}
+
 .contact-container{
     margin-left: 20px;
 }
@@ -461,12 +587,7 @@
     padding: 10px 0;
 }
 
-.contact-wrapper{
-    width: 80%;
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-}
+
 
 .login-header-menu {
     display: none;
@@ -600,5 +721,9 @@
         display: flex;
         flex-direction: column;
         align-items: center;
+    }
+
+    .contact-text-container{
+        width: 100%;
     }
 }

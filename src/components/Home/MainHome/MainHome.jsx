@@ -316,9 +316,30 @@ const MainHome = () => {
                 <section className="home-contacto">
                     <h2>Contacto</h2>
                     <div className="contact-wrapper">
-                        
-                        <div className="map-container">
-                            <iframe className="iframe-map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d63390.89404368884!2d-79.86765562304934!3d-6.778267495100513!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x904cef2c56f229ad%3A0x9ef53152a0c6b9d!2sReal%20Plaza%20Chiclayo.!5e0!3m2!1ses!2spe!4v1676073447675!5m2!1ses!2spe" width="700" height="400" allowFullScreen="" loading="lazy" referrerPolicy="no-referrer-when-downgrade"></iframe>
+                        <div className="contact-text-container">
+                          <form className="contact__form" action="/">
+                              <div className="contact__inputs--1">
+                                  <label htmlFor="fname" className="contact__label--1">
+                                      <input type="text" id="fname" name="fname"  className="contact-name" placeholder="Nombre" autoComplete="name" required />
+                                  </label>
+                                  <label htmlFor="femail" className="contact__label--2">
+                                      <input type="email" id="femail" name="femail" className="contact-email" placeholder="Correo Electronico" autoComplete="email" required />
+                                  </label>
+                              </div>
+                              <div className="contact__inputs--2">
+                                  <label htmlFor="fbusiness" className="contact__label--3">
+                                      <input type="text" id="fbusiness" name="fbusiness"  className="contact-business" placeholder="Empresa" autoComplete="on" required />
+                                  </label>
+                                  <label htmlFor="ftelefono" className="contact__label--4">
+                                      <input type="tel" id="ftelefono" name="ftelefono" className="contact-telephone" placeholder="Telefono o celular" autoComplete="on" required />
+                                  </label>
+                              </div>
+                              <label htmlFor="area" className="contact__textarea--label"></label>
+                              <textarea className="text-area" name="area" id="area" cols="30" rows="10" placeholder="Mensaje" required></textarea>
+                              <div className="contact__btn--container">
+                                  <button className="contact__btn--submit" type="submit">ENVIAR</button>
+                              </div>
+                          </form>
                         </div>
 
                         <div className="contact-container">
