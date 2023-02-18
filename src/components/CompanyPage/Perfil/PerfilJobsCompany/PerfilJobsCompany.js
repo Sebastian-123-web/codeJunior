@@ -26,7 +26,7 @@ const PerfilJobsCompany = (props) => {
             { job?.length && job?.map((element) => (
                     <div className="job control-job">
                        <div className='job_info'>
-                           <div className="job_img">
+                           <div className="job_img job-img-box">
                                <img src={props.logoEmpresa} alt="" width={72} height={72} className="img-job" />
                            </div>
                            <div className="job_descr">

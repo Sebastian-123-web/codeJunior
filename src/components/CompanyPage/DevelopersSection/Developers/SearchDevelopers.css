@@ -56,3 +56,21 @@
     width: 100%;
   }
 }
+
+@media screen and (max-width: 1450px) {
+  .company-dev-search {
+    width: 80%;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .company-dev-search_box {
+    width: 100%;
+    margin-left: 0;
+  }
+
+  .company-dev-search_box > input {
+    width: 100%;
+  }
+}
+

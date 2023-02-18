@@ -29,7 +29,7 @@ export default function PerfilCompany() {
 
         <section className='about-company'>
           <div className='section-company_left'>
-            <section>
+            <section className='main-company-box'>
               <PerfilMainCompany descripcionEmpresa={dataEmp.biografia}  />
             </section>
 
