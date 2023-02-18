@@ -1,5 +1,5 @@
 import React, { useState } from 'react'
-import './MessageBusiness.css'
+import './MessageDeveloper.css'
 
 export const Chat = () => {
   const [chat, setChat] = useState("")
@@ -16,7 +16,7 @@ export const Chat = () => {
   )
 }
 
-export const Jorge = () => {
+export const Gerardo = () => {
   return (
     <section className='section-message'>
       <div className='message-sends'>
@@ -29,28 +29,4 @@ export const Jorge = () => {
   )
 }
 
-export const Fernando = () => {
-  return (
-    <section className='section-message'>
-      <div className='message-sends'>
-        <h1>mensajes1</h1>
-      </div>
-      <div className='message-chats'>
-        {<Chat/>}
-      </div>
-    </section>
-  )
-}
 
-export const Sebastian = () => {
-  return (
-    <section className='section-message'>
-      <div className='message-sends'>
-        <h1>mensajes2</h1>
-      </div>
-      <div className='message-chats'>
-        {<Chat/>}
-      </div>
-    </section>
-  )
-}

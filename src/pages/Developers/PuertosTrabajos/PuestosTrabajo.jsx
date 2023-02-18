@@ -7,10 +7,40 @@ import Propuesta from '../../../components/DevelopersPage/PropuestasTrabajos/Pro
 const PuestosTrabajos = () => {
 
     const [ business, setBusiness ] = useState([]);
+    const [ search, setSearch ] = useState("")
 
     const fetchBusiness = async() => {
         const dataBusiness = await DataComDev('business');
         setBusiness(dataBusiness);
+    }
+
+    const handleSearch = (e) => {
+        const valueInput = e.target.value
+
+        if (valueInput.length == 0) {
+            fetchBusiness()
+        }
+
+        if (valueInput.length > 3) {
+            const newData = business.filter((name) => name.puestos_trabajos[0].cargo_buscado.toUpperCase().includes(valueInput.toUpperCase()));
+            setBusiness(newData) 
+        }
+
+        if (valueInput.length > 3) {
+            const newData = business.filter((name) => name.puestos_trabajos[0].tipo_trabajo.toUpperCase().includes(valueInput.toUpperCase()));
+            setBusiness(newData) 
+        }
+
+        if (valueInput.length > 3) {
+            const newData = business.filter((name) => name.puestos_trabajos[0].tiempo_trabajo.toUpperCase().includes(valueInput.toUpperCase()));
+            setBusiness(newData) 
+        }
+
+        if (valueInput.length > 3) {
+            const newData = business.filter((name) => name.nombre_empresa.toUpperCase().includes(valueInput.toUpperCase()));
+            setBusiness(newData) 
+        }
+
     }
 
     useEffect(()=>{
@@ -24,7 +54,7 @@ const PuestosTrabajos = () => {
                 <h1 className='banner-50'>Encuentra el empleo que se acomode mas a tus grandes habilidades</h1>
             </div>
             <div className="search_job">
-                <input type="text" className='search_job_-input' placeholder='Buscar Empleo' />
+                <input onChange={handleSearch} type="text" className='search_job_-input' placeholder='Buscar Empleo' />
             </div>
             <Propuesta business={business} />
         </div>

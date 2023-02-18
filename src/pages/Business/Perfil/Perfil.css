@@ -42,5 +42,22 @@
     .about-company {
         align-items: center;
         flex-direction: column;
+        margin-bottom: 5rem;
+    }
+
+    .section-company_left {
+        margin: 0;
     }
 }
+
+/* @media screen and (max-width: 1450px) {
+    .about-company {
+        align-items: center;
+        flex-direction: column;
+        margin-bottom: 5rem;
+    }
+    
+    .section-company_left {
+        margin: 0;
+    }
+} */

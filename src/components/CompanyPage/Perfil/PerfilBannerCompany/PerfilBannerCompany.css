@@ -89,7 +89,32 @@
 }
 
 @media screen and (max-width:760px) {
+    .company__banner {
+        width: 100%;
+        margin: 0;
+    }
+    
+    .company_info {
+        left: 15%;
+    }
+    
     .perfil-company {
         margin-top: 1rem !important;
     }
+}
+
+@media screen and (max-width: 1450px) {
+    .company__banner {
+        width: 100%;
+        margin: 0;
+    }
+    
+    .company_info {
+        left: 15%;
+    }
+    
+    .perfil-company {
+        margin-top: 1rem !important;
+    }
+    
 }

@@ -81,6 +81,7 @@
     min-height: 4rem;
     margin: 0 auto;
     resize: none;
+    padding-left: .6rem;
 }
 
 .change-value > button {
@@ -102,7 +103,75 @@
 
 @media screen and (max-width: 760px) {
     .main-company {
-        min-width: 95%;
+        width: 90%;
+        min-width: 50%;
+        margin: 0 !important;
+        align-items: center;
+    }
+
+    .main-company_description {
+        width: 90%;
+    }
+
+    .main-company_description > p {
+        width: auto;
+        margin: 0 auto;
+    }
+
+    .main-company-box {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .change-value {
+        width: 100%;
+    }
+
+    .change-value > button {
+        left: 60%;
+    }
+
+    .top-main_description > button {
         margin: 0;
     }
+}
+
+
+
+@media screen and (max-width: 1450px) {
+    .main-company {
+        width: 90%;
+        min-width: 50%;
+        margin: 0 !important;
+        align-items: center;
+    }
+    
+    .main-company_description {
+        width: 90%;
+    }
+    
+    .main-company_description > p {
+        width: auto;
+        margin: 0 auto;
+    }
+    
+    .main-company-box {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    
+    .change-value {
+        width: 100%;
+    }
+    
+    .change-value > button {
+        left: 60%;
+    }
+    
+    .top-main_description > button {
+        margin: 0;
+    }
+    
 }

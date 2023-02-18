@@ -4,7 +4,7 @@ import  "../../../../pages/Developers/Perfil/Perfil.css"
 import { useEffect, useState } from "react"
 import { DataDevCom } from "../../../../services/DataDevCom"
 import { useParams } from 'react-router-dom'
-import InformacionDev from "../../../DevelopersPage/perfil/InformacionDev"
+import InformacionDevCompany from "../../../../components/CompanyPage/Developers/Perfil/InformacionDevCompany"
 import SobreMi from "../../../DevelopersPage/perfil/SobreMi"
 import Experiencia from "../../../DevelopersPage/perfil/Experiencia"
 import Tecnologias from "../../../DevelopersPage/perfil/Tecnologias"
@@ -62,7 +62,7 @@ const PerfildeveloperCompany = (props) => {
             </div>
             <div className="data-dev">
                 <div className="col">
-                    <InformacionDev nombre={dev.nombre} apellido={dev.apellido} cargo={dev.cargo} telefono={dev.telefono} correo={dev.correo}/>
+                    <InformacionDevCompany nombre={dev.nombre} apellido={dev.apellido} cargo={dev.cargo} telefono={dev.telefono} correo={dev.correo}/>
                     <SobreMi bio={dev.biografia} sob={sob} />
                 </div>
                 <div className="col">
