@@ -1,9 +1,17 @@
 import React from 'react'
+import './Notification.css'
 
-export default function Notifications() {
+export default function Notifications(props) {
   return (
-    <div>
-      <h1>Notificaciones</h1>
+    <div className='notification-section'>
+      <div className='notification-section-center'>
+        <section className='notification_message'>
+          <button>+ Nuevo Mensaje</button>
+        </section>
+        <section className='notification_render'>
+          {props.Section}
+        </section>
+      </div>
     </div>
   )
 }

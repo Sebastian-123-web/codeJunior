@@ -2,6 +2,21 @@ import React from "react";
 import perfil1 from '../../../assets/Home/assetsHome/perfil-1.jpg';
 import perfil2 from '../../../assets/Home/assetsHome/perfil-22.jpg';
 import perfil3 from '../../../assets/Home/assetsHome/perfil-3.jpg';
+import empresa_fb from '../../../assets/Home/assetsHome/empresa_facebook.svg';
+import empresa_cisco from '../../../assets/Home/assetsHome/empresa_cisco.svg';
+import empresa_dell from '../../../assets/Home/assetsHome/empresa_dell.svg';
+import empresa_discord from '../../../assets/Home/assetsHome/empresa_discord.svg';
+import empresa_apple from '../../../assets/Home/assetsHome/empresa_apple.svg';
+import empresa_github from '../../../assets/Home/assetsHome/empresa_github.svg';
+import empresa_google from '../../../assets/Home/assetsHome/empresa_google.svg';
+import empresa_ibm from '../../../assets/Home/assetsHome/empresa_ibm.svg';
+import empresa_linkedin from '../../../assets/Home/assetsHome/empresa_linkedin.svg';
+import empresa_microsoft from '../../../assets/Home/assetsHome/empresa_microsoft.svg';
+import empresa_samsung from '../../../assets/Home/assetsHome/empresa_samsung.svg';
+import empresa_tesla from '../../../assets/Home/assetsHome/empresa_tesla.svg';
+import gear from '../../../assets/Home/assetsHome/gear.png';
+import briefcase from '../../../assets/Home/assetsHome/suitcase.png';
+import users_main from '../../../assets/Home/assetsHome/customer.png';
 import { Link } from "react-router-dom";
 import { styled } from '@mui/material/styles';
 import Box from '@mui/material/Box';
@@ -190,6 +205,35 @@ const MainHome = () => {
                     <p className="about-text">Nos importa que las cosas pasen con una mirada centrada en resultados, mas que en horarios y lugares fisicos, por lo que apostamos por trabajar 100% remoto y asi tambien, incentivar a nuestros clientes, a que sus contrataciones sigan en la misma linea.</p>
                 </section>
                
+                <section className="homepage-container">
+                    <h2 className="homepage-title">DevJuniors no es una pagina de empleo tipica</h2>
+                    <h3 className="homepage-title-2">¿Porque DevJuniors?</h3>
+                    <div className="homepage-card-wrapper">
+                      <div className="homepage-card-container">
+                        <div className="homepage-img-container"><img src={gear} alt="insercion laboral" /></div>
+                        <div className="homepage-card-divider">
+                          <h4 className="homepage-card-title">90% de insercion laboral</h4>
+                          <p className="homepage-card-text">90% de nuestros desarrolladores consiguieron trabajo a los 3 meses de haberse creado su perfil.</p>
+                        </div>   
+                      </div>
+                      <div className="homepage-card-container">
+                        <div className="homepage-img-container"><img src={briefcase} alt="empresas reconocidad a nivel global" /></div>
+                        <div className="homepage-card-divider">
+                          <h4 className="homepage-card-title">Reconocidas empresas</h4>
+                          <p className="homepage-card-text">Conectar con importantes empresas del rubro reconocidad y que se encuentran en mas de 16 paises.</p>
+                        </div>
+                      </div>
+                      <div className="homepage-card-container">
+                        <div className="homepage-img-container"><img src={users_main} alt="comunidad internacional" /></div>
+                        <div className="homepage-card-divider">
+                          <h4 className="homepage-card-title">Comunidad internacional</h4>
+                          <p className="homepage-card-text">Forma parte de la comunidad Internacional de DevJuniors. Conoce e interactúa con profesionales de más de 16 países</p>
+                        </div>
+                      </div>
+                    </div>
+                    
+                </section>
+
                 <section className="testimonials">
                   <div className="home-diferenciales">
                       <h2 className="diferenciales-title">Diferenciales</h2>
@@ -240,16 +284,66 @@ const MainHome = () => {
                     </div>
                   </div>
                 </section>
+                <section className="partners-container">
+                    <div className="partners-wrapper">
+                      <div className="partners-text-container">
+                        <h2>Hiring partners</h2>
+                        <h3>Grandes empresas contratan DevJuniors</h3>
+                        <p>Conoce algunas de las empresas que tenemos convenios y contratan a nuestros desarrolladores.</p>
+                      </div>
+                      <div className="partners-img-container" >
+                        <div className="img-container-1">
+                          <div><img src={empresa_fb} alt="facebook" /></div>
+                          <div><img src={empresa_cisco} alt="Cisco" /></div>
+                          <div><img src={empresa_tesla} alt="Tesla" /></div>
+                          <div><img src={empresa_linkedin} alt="LinkedIn" /></div>
+                        </div>
+                        <div className="img-container-1">
+                          <div><img src={empresa_google} alt="Google" /></div>
+                          <div><img src={empresa_samsung} alt="Samsung" /></div>
+                          <div><img src={empresa_apple} alt="Apple" /></div>
+                          <div><img src={empresa_github} alt="Github" /></div>
+                        </div>
+                        <div className="img-container-1">
+                          <div><img src={empresa_discord} alt="Discord" /></div>
+                          <div><img src={empresa_ibm} alt="IBM" /></div>
+                          <div><img src={empresa_microsoft} alt="Microsoft" /></div>
+                          <div><img src={empresa_dell} alt="Dell" /></div>
+                        </div>
+                      </div>
+                    </div>
+                </section>
                 <section className="home-contacto">
                     <h2>Contacto</h2>
                     <div className="contact-wrapper">
-                        
-                        <div className="map-container">
-                            <iframe className="iframe-map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d63390.89404368884!2d-79.86765562304934!3d-6.778267495100513!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x904cef2c56f229ad%3A0x9ef53152a0c6b9d!2sReal%20Plaza%20Chiclayo.!5e0!3m2!1ses!2spe!4v1676073447675!5m2!1ses!2spe" width="700" height="400" allowFullScreen="" loading="lazy" referrerPolicy="no-referrer-when-downgrade"></iframe>
+                        <div className="contact-text-container">
+                          <form className="contact__form" action="/">
+                              <div className="contact__inputs--1">
+                                  <label htmlFor="fname" className="contact__label--1">
+                                      <input type="text" id="fname" name="fname"  className="contact-name" placeholder="Nombre" autoComplete="name" required />
+                                  </label>
+                                  <label htmlFor="femail" className="contact__label--2">
+                                      <input type="email" id="femail" name="femail" className="contact-email" placeholder="Correo Electronico" autoComplete="email" required />
+                                  </label>
+                              </div>
+                              <div className="contact__inputs--2">
+                                  <label htmlFor="fbusiness" className="contact__label--3">
+                                      <input type="text" id="fbusiness" name="fbusiness"  className="contact-business" placeholder="Empresa" autoComplete="on" required />
+                                  </label>
+                                  <label htmlFor="ftelefono" className="contact__label--4">
+                                      <input type="tel" id="ftelefono" name="ftelefono" className="contact-telephone" placeholder="Telefono o celular" autoComplete="on" required />
+                                  </label>
+                              </div>
+                              <label htmlFor="area" className="contact__textarea--label"></label>
+                              <textarea className="text-area" name="area" id="area" cols="30" rows="10" placeholder="Mensaje" required></textarea>
+                              <div className="contact__btn--container">
+                                  <button className="contact__btn--submit" type="submit">ENVIAR</button>
+                              </div>
+                          </form>
                         </div>
 
                         <div className="contact-container">
-                              <p><strong>Direccion:</strong> CalLe Algun Lugar XYZ, Chiclayo</p>
+                              <p><strong>Direccion:</strong> Calle Algun Lugar XYZ, Chiclayo</p>
                               <p><strong>Telefono:</strong> 01 - 555 4444</p>
                               <p><strong>email: </strong> contacto@devjuniors.com</p>
                         </div>
