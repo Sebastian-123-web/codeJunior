@@ -173,19 +173,7 @@ const MainHome = () => {
         <>
             <main className="main">
                 <section className="principal">
-
-                    <ButtonBases />
-
-                    {/*<div className="img-container">
-                        <img src={empresa} alt="perfil de empresa" />
-                        <button className="btn-1-principal">Empresa</button>
-                    </div>
-                    
-                    <div className="img-container">
-                        <img src={desarrollador} alt="perfil de desarrollador" />
-                        <button className="btn-2-principal">Desarrollador</button>
-                    </div>*/}
-                    
+                    <ButtonBases /> 
                 </section>
                 <section className="content">
                     <div className="content-left content-title-1">
@@ -220,7 +208,7 @@ const MainHome = () => {
                         <div className="homepage-img-container"><img src={briefcase} alt="empresas reconocidad a nivel global" /></div>
                         <div className="homepage-card-divider">
                           <h4 className="homepage-card-title">Reconocidas empresas</h4>
-                          <p className="homepage-card-text">Conectar con importantes empresas del rubro reconocidad y que se encuentran en mas de 16 paises.</p>
+                          <p className="homepage-card-text">Conectar con importantes empresas del rubro y que se encuentran en mas de 16 paises.</p>
                         </div>
                       </div>
                       <div className="homepage-card-container">
@@ -341,12 +329,12 @@ const MainHome = () => {
                               </div>
                           </form>
                         </div>
-
+                        {/*
                         <div className="contact-container">
                               <p><strong>Direccion:</strong> Calle Algun Lugar XYZ, Chiclayo</p>
                               <p><strong>Telefono:</strong> 01 - 555 4444</p>
                               <p><strong>email: </strong> contacto@devjuniors.com</p>
-                        </div>
+                         </div>*/}
                     </div>
                 </section>
             </main>

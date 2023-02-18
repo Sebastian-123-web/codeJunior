@@ -5,6 +5,7 @@ import './LoginHome.css'
 import { useNavigate } from "react-router-dom";
 import Swal from "sweetalert2";
 import {DataComDev} from '../../../services/Company/DataComDevs'
+import { Link } from "react-router-dom";
 
 const LoginHome = () => {
 
@@ -28,7 +29,7 @@ const LoginHome = () => {
     const handleSubmit  = (e)  => {
         e.preventDefault();
 
-        if(dev=="Not found"){
+        if(dev==="Not found"){
             return Swal.fire({
                 title : "Falta Seleccionar el tipo de Entidad",
                 text: "Desarrollador o Empresa",
@@ -80,6 +81,10 @@ const LoginHome = () => {
                         Bienvenidos a
                     <h2 className="logo logoform">Dev<span className="logo-extend logo-formjr">Juniors!</span></h2>
                     </span>
+                    <p>
+                        Si eres nuevo registrate como <Link className="link-login" to="/registro/desarrollador"> Desarrollador </Link> 
+                        o <Link className="link-login" to="/registro/empresa"> Empresa</Link> o vuelve al <Link className="link-login" to="/">Inicio</Link>
+                    </p>
                 </div>
                 <form className="container__form" action="/" onSubmit={handleSubmit}>
                         <p>Elige si eres empresa o desarrollador</p>

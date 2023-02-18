@@ -432,9 +432,6 @@
     filter: grayscale(0);
 }
 
-
-
-
 .home-contacto{
     display: flex;
     flex-direction: column;
@@ -453,12 +450,12 @@
 .contact-wrapper{
     width: 90%;
     display: flex;
-    justify-content: space-around;
+    justify-content: center;
     align-items: center;
 }
 
 .contact-text-container{
-    width: 30%;
+    width: 90%;
     padding: 20px;
     display: flex;
 }
@@ -486,7 +483,7 @@
 }
 
 .contact-name{
-    width: 80%;
+    width: 95%;
     height: auto;
     padding: 4px 0 18px 2px;
     border: none;
@@ -510,7 +507,7 @@
 }
 
 .contact-email{
-    width: 100%;
+    width: 95%;
     height: auto;
     padding: 4px 0 18px 2px;
     border: none;
@@ -527,7 +524,7 @@
 }
 
 .contact-business{
-    width: 90%;
+    width: 95%;
     height: auto;
     padding: 4px 0 18px 2px;
     border: none;
@@ -538,7 +535,7 @@
 
 
 .contact-telephone{
-    width: 85%;
+    width: 95%;
     height: auto;
     padding: 4px 0 18px 2px;
     border: none;
