@@ -70,6 +70,11 @@
     padding: 15px;
     border-radius: 8px;
 }
+.job:hover {
+    box-shadow: 0px 1px 3px 0px rgba(0, 0, 0, 0.75);
+    -webkit-box-shadow: 0px 1px 3px 0px rgba(0, 0, 0, 0.75);
+    -moz-box-shadow: 0px 1px 3px 0px rgba(0, 0, 0, 0.75);
+  }
 .job_info{
     display: flex;
 }

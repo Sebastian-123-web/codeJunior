@@ -3,10 +3,12 @@ import './PerfilSocialCompany.css'
 import fb_logo from '../../../../assets/Perfil/facebook.png'
 import twitter_logo from '../../../../assets/Perfil/twitter.png'
 import ig_logo from '../../../../assets/Perfil/instagram.png'
+import ModalRedes from '../../Modal/ModalRedes'
 
 export default function PerfilSocialCompany(props) {
 
   const [ red, setRed ] = useState([]);
+  const [modal, setModal] = useState(false);
 
   const redes = {
     "Instagram": ig_logo,
@@ -36,9 +38,13 @@ export default function PerfilSocialCompany(props) {
                 { red?.length > 0 && red?.map((e) => (
                   <li><a href={e.link} target="_blank"><img className='red-icon-company' src={redes[e.red] ?? "N/A"} alt=''/></a></li>
                 ))}
-                <li><div className='add-social-company'>+</div></li>
+                <li><div className='add-social-company' onClick={()=>setModal(!modal)}>+</div></li>
             </ul>
         </nav>
+        <div className={`modal-business ${modal && 'activebusiness'}`}>
+            <section className={`modal-business-background ${modal && 'activemodalbusiness'}`} onClick={()=>setModal(!modal)}></section>
+            <ModalRedes />
+        </div>
     </div>
   )
 }

@@ -1,0 +1,11 @@
+.modal-trabajos-container{
+    display: grid;
+    grid-template-columns: auto auto;
+    gap: 20px;
+}
+
+@media screen and (max-width:640px){
+    .modal-trabajos-container{
+        grid-template-columns: auto;
+    }
+}

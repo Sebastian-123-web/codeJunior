@@ -1,8 +1,10 @@
 import React, { useEffect, useState } from 'react'
 import './PerfilJobsCompany.css'
+import ModalEmpleo from '../../Modal/ModalEmpleo';
 
 const PerfilJobsCompany = (props) => {
     const [ job, setJob ] = useState([]);
+    const [modal, setModal] = useState(false);
 
     const trabajo = () => {
         setJob(props.puestosEmpresa)
@@ -17,7 +19,7 @@ const PerfilJobsCompany = (props) => {
     <section className='jobs-company'>
         <div className='jobs-section-button'>
           <h1 className='title-section-company'>Vacantes:</h1>
-          <button><h2>+</h2></button>
+          <button onClick={()=>setModal(!modal)}><h2>+</h2></button>
         </div>
         <section className='jobs-section'>
             <div className='jobs-cards-section'>
@@ -44,6 +46,10 @@ const PerfilJobsCompany = (props) => {
                 ))}
             </div>
         </section>
+        <div className={`modal-business ${modal && 'activebusiness'}`}>
+            <section className={`modal-business-background ${modal && 'activemodalbusiness'}`} onClick={()=>setModal(!modal)}></section>
+            <ModalEmpleo />
+        </div>
     </section>
   )
 }
