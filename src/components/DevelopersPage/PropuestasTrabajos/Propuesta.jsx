@@ -1,6 +1,7 @@
 import { useEffect, useState } from "react";
 import Modal from "../Modal/Modal";
-import './Propuesta.css'
+import './Propuesta.css';
+import ModalRedes from '../../CompanyPage/Modal/ModalRedes';
 
 const Propuesta = (props) => {
 
