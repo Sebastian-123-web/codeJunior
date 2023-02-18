@@ -115,6 +115,9 @@
   width: 20px;
 }
 
+.tecnologies-user {
+  margin-top: 1rem;
+}
 
 /* 
     Modal
@@ -177,6 +180,7 @@
     left: 50%;
     transition: all .3s;
     display: none;
+    z-index: 1;
 }
 
 @media screen and (max-width:1450px) {

@@ -72,12 +72,12 @@ export default function Developers(props) {
               <div className='users-cards-main'>
                 <h1>{event.nombre} {event.apellido}</h1>
                 <h2 className='users-card-charge'>{event.cargo}</h2>
+                  <div className='tecnologies-user'>{event.tecnologia.length > 0 && event.tecnologia.map((element) => (
+                    <img src={element.icon} alt='icon-tecnologies' className='icon-tc'/>
+                  ))}</div>  
               </div>
 
               <div className='users-cards-footer'>
-                  <div>{event.tecnologia.length > 0 && event.tecnologia.map((element) => (
-                    <img src={element.icon} alt='icon-tecnologies' className='icon-tc'/>
-                  ))}</div>  
                     
               </div>
 
