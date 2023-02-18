@@ -17,13 +17,15 @@ import empresa_tesla from '../../../assets/Home/assetsHome/empresa_tesla.svg';
 import gear from '../../../assets/Home/assetsHome/gear.png';
 import briefcase from '../../../assets/Home/assetsHome/suitcase.png';
 import users_main from '../../../assets/Home/assetsHome/customer.png';
+import contact_desarrollador from '../../../assets/Home/assetsHome/programadores-home.jpg'
 import { Link } from "react-router-dom";
 import { styled } from '@mui/material/styles';
 import Box from '@mui/material/Box';
 import ButtonBase from '@mui/material/ButtonBase';
 import Typography from '@mui/material/Typography';
-import Carousel from 'react-material-ui-carousel'
-import './MainHome.css'
+import Carousel from 'react-material-ui-carousel';
+import './MainHome.css';
+import { useState } from "react";
 
 const images = [
     {
@@ -168,6 +170,30 @@ const images = [
   }
 
 const MainHome = () => {
+      const [modal, setModal] = useState(false);
+
+      const [mainForm, setMainForm] = useState({fname: ''});
+
+      const ShowModal = (event) => {
+        setModal(true);
+      }
+  
+      const CloseModal = (event)  => {
+        setModal(false);
+      }
+
+      const handleChange = (e) => {
+        setMainForm({
+            ...mainForm,
+            [e.target.name]: e.target.value, //actualizar el formulario
+        })
+      }
+
+      const handleSubmit = (e) => {
+        e.preventDefault();
+        alert("El formulario se ha enviado")
+      }
+
 
     return(
         <>
@@ -201,21 +227,21 @@ const MainHome = () => {
                         <div className="homepage-img-container"><img src={gear} alt="insercion laboral" /></div>
                         <div className="homepage-card-divider">
                           <h4 className="homepage-card-title">90% de insercion laboral</h4>
-                          <p className="homepage-card-text">90% de nuestros desarrolladores consiguieron trabajo a los 3 meses de haberse creado su perfil.</p>
+                          <p className="homepage-card-text">90% de nuestros desarrolladores consiguieron trabajo a los 3 meses de haberse creado su perfil. En DevJuniors nos hacemos cargo de que sean guiados por un experto en TI.</p>
                         </div>   
                       </div>
                       <div className="homepage-card-container">
                         <div className="homepage-img-container"><img src={briefcase} alt="empresas reconocidad a nivel global" /></div>
                         <div className="homepage-card-divider">
                           <h4 className="homepage-card-title">Reconocidas empresas</h4>
-                          <p className="homepage-card-text">Conectar con importantes empresas del rubro y que se encuentran en mas de 16 paises.</p>
+                          <p className="homepage-card-text">Conectar con importantes empresas del rubro y que se encuentran en mas de 16 paises. Aceleramos el proceso de contrtatacion.</p>
                         </div>
                       </div>
                       <div className="homepage-card-container">
                         <div className="homepage-img-container"><img src={users_main} alt="comunidad internacional" /></div>
                         <div className="homepage-card-divider">
                           <h4 className="homepage-card-title">Comunidad internacional</h4>
-                          <p className="homepage-card-text">Forma parte de la comunidad Internacional de DevJuniors. Conoce e interactúa con profesionales de más de 16 países</p>
+                          <p className="homepage-card-text">Forma parte de la comunidad Internacional de DevJuniors. Conoce e interactúa con profesionales de más de 16 países que se apoyan de manera técnica.</p>
                         </div>
                       </div>
                     </div>
@@ -239,7 +265,7 @@ const MainHome = () => {
                     <h2>Testimonios</h2>
                     <p>¿Que dicen de nosotros?</p>
                     <div className="card-containers">
-                            <Carousel className="carrousel-box">  
+                          <Carousel className="carrousel-box">  
                             <div className="card-carrousels" id="card-carrousel-1">
                                 <div className="cards" id="card-1">
                                     <p className="card-star">★★★★★</p>
@@ -248,8 +274,8 @@ const MainHome = () => {
                                     <p className="card-user">Sebastian Gerardo</p>
                                     <p className="card-text">CEO empresa 1</p>
                                 </div>
-                            </div>
-                            <div className="card-carrousels" id="card-carrousel-2">
+                              </div>
+                             <div className="card-carrousels" id="card-carrousel-2">
                                 <div className="cards" id="card-2">
                                     <p className="card-star">★★★★★</p>
                                     <img className="cards-img" src={perfil2} alt="perfil 2" />
@@ -257,8 +283,8 @@ const MainHome = () => {
                                     <p className="card-user">Sebastian Bañagasta</p>
                                     <p className="card-text">CTO empresa 2</p>
                                 </div>
-                            </div>
-                            <div className="card-carrousels" id="card-carrousel-3">
+                              </div>
+                              <div className="card-carrousels" id="card-carrousel-3">
                                         <div className="cards" id="card-3">
                                             <p className="card-star">★★★★★</p>
                                             <img className="cards-img" src={perfil3} alt="perfil 3" />
@@ -266,7 +292,7 @@ const MainHome = () => {
                                             <p className="card-user">Fernando Hervias</p>
                                             <p className="card-text">CEO y fundador empresa 3</p>
                                         </div>
-                            </div>
+                              </div>
                             </Carousel>
                         
                     </div>
@@ -303,38 +329,47 @@ const MainHome = () => {
                 </section>
                 <section className="home-contacto">
                     <h2>Contacto</h2>
-                    <div className="contact-wrapper">
+                    <div className="contact-text-wrapper">
+                      <div className="contact-show">
+                        <div className="contact-image-container">
+                          <img className="contact-image" src={contact_desarrollador} alt="Imagen referencial de programadores" />
+                        </div>
+                        <div className="contact-show-text">
+                          <h2>¿Listo para empezar tu camino en el rubro digital?</h2>
+                          <p>Comienza tu camino hoy</p>
+                          <div className="contact-show-btn-container">
+                            <button id="btn-contact-modal" onClick={ShowModal}>Entérate más</button>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div className={`contact-modal ${modal ? "visible" : "hidden" }`}>
                         <div className="contact-text-container">
-                          <form className="contact__form" action="/">
+                          <form className="contact__form" action="/" onSubmit={handleSubmit}>
                               <div className="contact__inputs--1">
                                   <label htmlFor="fname" className="contact__label--1">
-                                      <input type="text" id="fname" name="fname"  className="contact-name" placeholder="Nombre" autoComplete="name" required />
+                                      <input type="text" id="fname" value={mainForm.fname} onChange={handleChange}  name="fname"  className="contact-name" placeholder="Nombre" autoComplete="name" required />
                                   </label>
                                   <label htmlFor="femail" className="contact__label--2">
-                                      <input type="email" id="femail" name="femail" className="contact-email" placeholder="Correo Electronico" autoComplete="email" required />
+                                      <input type="email" id="femail" value={mainForm.femail} onChange={handleChange} name="femail" className="contact-email" placeholder="Correo Electronico" autoComplete="email" required />
                                   </label>
                               </div>
                               <div className="contact__inputs--2">
                                   <label htmlFor="fbusiness" className="contact__label--3">
-                                      <input type="text" id="fbusiness" name="fbusiness"  className="contact-business" placeholder="Empresa" autoComplete="on" required />
+                                      <input type="text" id="fbusiness" value={mainForm.fbusiness} onChange={handleChange} name="fbusiness"  className="contact-business" placeholder="Empresa" autoComplete="on" required />
                                   </label>
                                   <label htmlFor="ftelefono" className="contact__label--4">
-                                      <input type="tel" id="ftelefono" name="ftelefono" className="contact-telephone" placeholder="Telefono o celular" autoComplete="on" required />
+                                      <input type="tel" id="ftelefono" value={mainForm.ftelefono} onChange={handleChange} name="ftelefono" className="contact-telephone" placeholder="Telefono o celular" autoComplete="on" required />
                                   </label>
                               </div>
                               <label htmlFor="area" className="contact__textarea--label"></label>
-                              <textarea className="text-area" name="area" id="area" cols="30" rows="10" placeholder="Mensaje" required></textarea>
+                              <textarea className="text-area" name="area" id="area" value={mainForm.area} onChange={handleChange} cols="30" rows="10" placeholder="Mensaje" required></textarea>
                               <div className="contact__btn--container">
                                   <button className="contact__btn--submit" type="submit">ENVIAR</button>
+                                  <button className="contact__btn--submit" type="button" onClick={CloseModal}>CERRAR</button>
                               </div>
                           </form>
                         </div>
-                        {/*
-                        <div className="contact-container">
-                              <p><strong>Direccion:</strong> Calle Algun Lugar XYZ, Chiclayo</p>
-                              <p><strong>Telefono:</strong> 01 - 555 4444</p>
-                              <p><strong>email: </strong> contacto@devjuniors.com</p>
-                         </div>*/}
                     </div>
                 </section>
             </main>

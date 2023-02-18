@@ -29,19 +29,18 @@ const FooterHome = () => {
                             </div>
                         </div>
                     </div>
-                    {/*<nav className="navigator-bar">
-                        <ul className="navigator-list">
-                            <li className="navigator-item">inicio</li>
-                            <li className="navigator-item">acerca de</li>
-                            <li className="navigator-item">login</li>
-                        </ul>
-                    </nav>*/}
                      <div className="contact-footer">
                               <p><strong>Dirección:</strong> Calle Algun Lugar XYZ, Lima</p>
                               <p><strong>Teléfono:</strong> 01 - 555 4444</p>
                               <p><strong>email: </strong> contacto@devjuniors.com</p>
                     </div>
                     <div className="copyright">
+                        <div className="copyright-conditions">
+                            <p>Terminos y condiciones </p>
+                            <p>  Politica de Privacidad  </p>
+                            <p>  Condiciones de contratacion </p>
+                            <p>  Libro de reclamaciones</p>
+                        </div>
                         <div className="copyright-cover">
                             <p className="copyright-text">© Copyright 2023</p><span className="copyright-extend">CodeJuniors</span>
                         </div>
