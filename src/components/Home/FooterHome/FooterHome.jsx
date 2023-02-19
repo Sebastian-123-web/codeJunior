@@ -35,12 +35,6 @@ const FooterHome = () => {
                               <p><strong>email: </strong> contacto@devjuniors.com</p>
                     </div>
                     <div className="copyright">
-                        <div className="copyright-conditions">
-                            <p>Terminos y condiciones </p>
-                            <p>  Politica de Privacidad  </p>
-                            <p>  Condiciones de contratacion </p>
-                            <p>  Libro de reclamaciones</p>
-                        </div>
                         <div className="copyright-cover">
                             <p className="copyright-text">© Copyright 2023</p><span className="copyright-extend">CodeJuniors</span>
                         </div>
